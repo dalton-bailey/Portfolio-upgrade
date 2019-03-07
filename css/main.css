@@ -8,10 +8,19 @@ html,body {
 }
 
   .intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     top: 0;
     background:#FFD0CC;
     min-height: 55vh;
     padding-top: 45vh;
+  }
+
+  .intro div {
+    width: 400px;
+    height: 400px;
+    text-align: center;
   }
 
   .intro p {
