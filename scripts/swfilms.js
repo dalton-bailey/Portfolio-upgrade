@@ -2,14 +2,13 @@ import { films } from '../data/films.js'
 
 const intro = document.querySelector('.intro')
 
-//films.sort((a, b) =>  (a.episode_id > b.espidsode_id) ? 1 : -1)
-
 const sorted = films.sort((a,b) => (a.episode_id > b.episode_id) ? 1 : -1)
 
 console.log(sorted)
 
 films.forEach(film => {
     let tile = document.createElement('div')
+    tile.className = 'box'
 
     let titleElement = document.createElement('h1')
     tile.appendChild(titleElement)
