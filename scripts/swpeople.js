@@ -1,27 +1,59 @@
 import { people } from '../data/people.js'
+import { planets } from '../data/planets.js'
 
-const men = people.filter(person => person.gender === "male");
-const women = people.filter(person => person.gender === "female");
-const other = people.filter(
-    person => (person.gender === "n/a") || 
-    (person => person.gender === "none") || 
-    (person => person.gender === "hermaphrodite"));
+const intro = document.querySelector('.intro')
 
-    console.log(men, women, other)
+const getLastNumber = (url) => {
+    let end = url.lastIndexOf('/')
+    let start = end -2
+    if(url.charAt(start) === '/') {
+        start++
+    }
+    return url.slice(start, end)
+}
+
+const allHomeWorlds = people.map(person => {
+    let foundWorld = planets.find(planet => {
+        return planet.url === person.homeworld
+    })
+
+    let imageURL = getLastNumber(person.url)
+    return {
+        name: person.name,
+        home: foundWorld.name,
+        eye_color: person.eye_color,
+        imagePath: `https://starwars-visualguide.com/assets/img/characters/${imageURL}.jpg`
+    }
+})
+
+
+
+  //  console.log(allHomeWorlds)
 
 const mainContainer = document.createElement('div')
 mainContainer.className = 'container'
 
-men.forEach((man) => {
-    let manElement = document.createElement('div')
-    manElement.className = 'box'
-    manElement.textContent = man.name
+allHomeWorlds.forEach((person) => {
+    let personElement = document.createElement('div')
+    personElement.className = 'box'
 
-    let eyeColor = document.createElement('p')
-    eyeColor.textContent = man.eye_color
-    
-    manElement.appendChild(eyeColor)
-    mainContainer.appendChild(manElement)
+    let nameElement = document.createElement('p')
+    nameElement.className = 'name'
+    nameElement.textContent = person.name
+
+    personElement.style.borderColor = person.eye_color
+
+    let planetElement = document.createElement('p')
+    planetElement.className = 'planet'
+    planetElement.textContent = person.home
+
+    let imageElement = document.createElement('img')
+    imageElement.src = person.imagePath
+
+    personElement.appendChild(imageElement)
+    personElement.appendChild(nameElement)
+    personElement.appendChild(planetElement)
+    mainContainer.appendChild(personElement)
+
+    intro.appendChild(mainContainer)
 })
-
-document.body.appendChild(mainContainer)

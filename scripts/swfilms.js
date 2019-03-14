@@ -6,6 +6,9 @@ const sorted = films.sort((a,b) => (a.episode_id > b.episode_id) ? 1 : -1)
 
 console.log(sorted)
 
+const mainContainer = document.createElement('div')
+mainContainer.className = "container"
+
 films.forEach(film => {
     let tile = document.createElement('div')
     tile.className = 'box'
@@ -18,7 +21,9 @@ films.forEach(film => {
     tile.appendChild(crawlElement)
     crawlElement.textContent = film.opening_crawl
 
-   intro.appendChild(tile)
+    mainContainer.appendChild(tile)
+
+   intro.appendChild(mainContainer)
 })
 
 
