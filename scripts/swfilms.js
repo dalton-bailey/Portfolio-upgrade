@@ -2,14 +2,33 @@ import { films } from '../data/films.js'
 
 const intro = document.querySelector('.intro')
 
-const sorted = films.sort((a,b) => (a.episode_id > b.episode_id) ? 1 : -1)
+const getLastNumber = (url) => {
+    let end = url.lastIndexOf('/')
+    let start = end -2
+    if(url.charAt(start) === '/') {
+        start++
+    }
+    return url.slice(start, end)
+}
 
-console.log(sorted)
+//const sorted = films.sort((a,b) => (a.episode_id > b.episode_id) ? 1 : -1)
+
+const allFilms = films.map(film => {
+    let imageURL = getLastNumber(film.url)
+    return {
+        title: film.title,
+        opening_crawl: film.opening_crawl,
+        imagePath: `https://starwars-visualguide.com/assets/img/films/${imageURL}.jpg`
+    }
+    
+})
+
+//console.log(allFilms)
 
 const mainContainer = document.createElement('div')
 mainContainer.className = "container"
 
-films.forEach(film => {
+allFilms.forEach(film => {
     let tile = document.createElement('div')
     tile.className = 'box'
 
@@ -21,9 +40,15 @@ films.forEach(film => {
     tile.appendChild(crawlElement)
     crawlElement.textContent = film.opening_crawl
 
+    let imageElement = document.createElement('img')
+    imageElement.src = film.imagePath
+
+    tile.appendChild(imageElement)
+    tile.appendChild(titleElement)
+    tile.appendChild(crawlElement)
     mainContainer.appendChild(tile)
 
-   intro.appendChild(mainContainer)
+    intro.appendChild(mainContainer)
 })
 
 
