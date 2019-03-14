@@ -12,19 +12,24 @@ const getLastNumber = (url) => {
     return url.slice(start, end)
 }
 
+
 const allHomeWorlds = people.map(person => {
     let foundWorld = planets.find(planet => {
         return planet.url === person.homeworld
     })
 
-    let imageURL = getLastNumber(person.url)
+    let personImageURL = getLastNumber(person.url)
     return {
-        name: person.name,
+        personName: person.name,
         home: foundWorld.name,
         eye_color: person.eye_color,
-        imagePath: `https://starwars-visualguide.com/assets/img/characters/${imageURL}.jpg`
+        personImagePath: `https://starwars-visualguide.com/assets/img/characters/${personImageURL}.jpg`
     }
 })
+
+
+
+
 
 //console.log()
 
@@ -45,10 +50,10 @@ allHomeWorlds.forEach((person) => {
     planetElement.className = 'planet'
     planetElement.textContent = person.home
 
-    let imageElement = document.createElement('img')
-    imageElement.src = person.imagePath
+    let personImage = document.createElement('img')
+    personImage.src = person.personImagePath
 
-    personElement.appendChild(imageElement)
+    personElement.appendChild(personImage)
     personElement.appendChild(nameElement)
     personElement.appendChild(planetElement)
     mainContainer.appendChild(personElement)
