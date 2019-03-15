@@ -18,20 +18,16 @@ const allHomeWorlds = people.map(person => {
         return planet.url === person.homeworld
     })
 
-    let personImageURL = getLastNumber(person.url)
+    let imageURL = getLastNumber(person.url)
     return {
-        personName: person.name,
+        name: person.name,
         home: foundWorld.name,
         eye_color: person.eye_color,
-        personImagePath: `https://starwars-visualguide.com/assets/img/characters/${personImageURL}.jpg`
+        personImagePath: `https://starwars-visualguide.com/assets/img/characters/${imageURL}.jpg`
     }
 })
 
-
-
-
-
-//console.log()
+console.log(allHomeWorlds)
 
 const mainContainer = document.createElement('div')
 mainContainer.className = 'container'

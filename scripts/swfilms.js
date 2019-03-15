@@ -11,7 +11,7 @@ const getLastNumber = (url) => {
     return url.slice(start, end)
 }
 
-//const sorted = films.sort((a,b) => (a.episode_id > b.episode_id) ? 1 : -1)
+const sorted = films.sort((a,b) => (a.episode_id > b.episode_id) ? 1 : -1) 
 
 const allFilms = films.map(film => {
     let imageURL = getLastNumber(film.url)
