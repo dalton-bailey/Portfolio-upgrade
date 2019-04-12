@@ -1,4 +1,7 @@
-.card_face_front {
+body {
+    text-align: center;
+}
+.card__face {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -7,4 +10,8 @@
 .box {
     margin: 10px;
     text-align: center;
+}
+
+img {
+    width: 200px;
 }

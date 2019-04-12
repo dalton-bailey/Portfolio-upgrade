@@ -1,37 +1,64 @@
 import { pokemon } from '../data/poke.js'
 
-pokemon.forEach((singleMon) => {
-  fetch(singleMon.url)
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (myJson) {
-      console.log(myJson);
-      createPokeCard(myJson)
-    });
-})
+class Pokemon {
+  constructor(name) {
+    this.id = 0,
+      this.name = name
+  }
+}
 
-console.log(pokemon)
+const mainContainer = document.querySelector('.card')
 
-const mainContainer = document.querySelector('.card_face_front')
-
-function createPokeCard(pokedata) {
+function cardFront(pokedata) {
   let card = document.createElement('div')
-  card.className = 'box'
+  card.className = 'card__face card__face--front'
   let figure = document.createElement('figure')
   let name = document.createElement('figcaption')
   let image = document.createElement('img')
 
   let upperName = pokedata.name.charAt(0).toUpperCase() + pokedata.name.slice(1)
   name.textContent = upperName
-  image.src = pokedata.sprites.front_default
+  if (pokedata.id !== 0) {
+    image.src = `../images/0${pokedata.id}${upperName}.png`
+  } else {
+    image.src = `../images/Pokeball.png`
+  }
+
   figure.appendChild(image)
   figure.appendChild(name)
   card.appendChild(figure)
+  return cardFront
+}
+
+function cardBack(pokedata) {
+  let cardBack = document.createElement('div')
+  card.className = 'card__face card__face--back'
+  return cardBack
+}
+
+function createPokeCard(pokedata) {
+  let card = document.createElement('div')
+  card.className = 'card'
+  card.appendChild(cardFront)
+  card.appendChild(cardBack)
   mainContainer.appendChild(card)
 }
 
-var card = document.querySelector('.card');
-card.addEventListener('click', function () {
-  card.classList.toggle('is-flipped');
-});
+pokemon.forEach((singleMon) => {
+  fetch(singleMon.url)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (myJson) {
+      createPokeCard(myJson)
+    });
+})
+
+const newPokemonButton = document.querySelector('button')
+
+newPokemonButton.addEventListener('click', function() {
+  let newPokeName = prompt('Enter new Pokemon name')
+  createPokeCard(new Pokemon(newPokeName))
+})
+
+
