@@ -1,0 +1,10 @@
+.card_face_front {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.box {
+    margin: 10px;
+    text-align: center;
+}
