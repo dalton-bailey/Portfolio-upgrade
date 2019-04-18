@@ -73,6 +73,7 @@ button {
     margin: 10px;
     font-size: 1.5rem;
     cursor: pointer;
+    border-radius: 25px;
 }
 
 footer {
