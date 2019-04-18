@@ -10,7 +10,7 @@ const mainContainer = document.querySelector('.container')
 
 function cardFront(pokedata) {
   let cardFront = document.createElement('div')
-  cardFront.className = 'card__face card__face--front'
+  cardFront.className = 'card__face'
   let figure = document.createElement('figure')
 
   let name = document.createElement('figcaption')
@@ -35,6 +35,7 @@ function cardBack(pokedata) {
   cardBack.classname = 'card__face card__face--back'
 
   let backimage = document.createElement('img')
+  backimage.classname = 'backImage'
   backimage.src = `../images/Pokeball.png`
 
   let height = document.createElement('p')
@@ -57,13 +58,14 @@ function createPokeCard(pokedata) {
   card.appendChild(cardFront(pokedata))
   card.appendChild(cardBack(pokedata))
   
-  card.addEventListener('click', function () {
-    card.classList.toggle('is-flipped');
-  });
-  
   scene.appendChild(card)
   mainContainer.appendChild(scene)
+
+  card.addEventListener( 'click', function() {
+    card.classList.toggle('is-flipped');
+  });
 }
+
 
 const allFetchedPokemon = []
 
@@ -100,10 +102,4 @@ newPokemonButton.addEventListener('click', function () {
   let newPokeName = prompt('Enter new Pokemon name')
   createPokeCard(new Pokemon(newPokeName))
 })
-
-var card = document.querySelector('.card');
-card.addEventListener('click', function () {
-  card.classList.toggle('is-flipped');
-});
-
 
