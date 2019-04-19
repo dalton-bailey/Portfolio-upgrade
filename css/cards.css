@@ -45,6 +45,7 @@ body {
     height: 100%;
     text-align: center;
     backface-visibility: hidden;
+    border-radius: 25px;
   }
   
 .card__face--back {
