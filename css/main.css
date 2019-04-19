@@ -39,13 +39,12 @@ html,body {
   nav ul {
     text-align: center;
     width: 100%;
+    background-color: white;
   }
 
   nav ul li {
     display: inline-block;
     margin: 1.5rem;
-    margin-bottom: 15px;
-    margin-top: 25px;
   }
 
   nav ul li a {
@@ -72,22 +71,26 @@ html,body {
   margin-bottom: 20px;
 }
 
-  .projects {
+  #projects {
     display: flex;
+    flex-direction: row;
     height: 220px;
     width: 280px;
 }
 
+  .project {
+  width: 500px;
+} 
+
   .project-pic {
-    width: 100px;
-    height: 150px;
-}
+    width: 100%;
+} 
 
   .project-title {
     font-weight: bold;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     text-decoration: none;
-    color: #1F2430;
+    color: black;
 }
 
 .header {
@@ -103,17 +106,19 @@ html,body {
   width: 100px;
   height: 100px;
   line-height: 100px;
-  background: #F4EEEC;
-  color: #1F2430;
+  background: #04BFBF;
+  color: black;
   text-decoration: none;
 }
 
 .contact-details:hover {
-  background: #E4F1FE;
-  color: #6B7CA6;
+  background: #04BFBF;
+  color: black;
+  opacity: .6;
 }
 
 .header {
+  color: #04BFBF;
   padding: 160px 0 110px;
 }
 
@@ -132,7 +137,7 @@ html,body {
   footer {
     padding: 20px;
     line-height: 40px;
-    color: #F2785C;
+    color: black;
   }
 
   @media only screen and (max-width: 900px) {
