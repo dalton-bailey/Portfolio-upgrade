@@ -54,9 +54,20 @@ body {
 
 .backImage {
     position: absolute;
-    left: 22px;
+    z-index: -1;
+    left: 20px;
+    top: 40px;
+    opacity: .4;
 }
 
+.height {
+    font-size: 1.5rem;
+}
+
+.weight {
+    font-size: 1.5rem;
+    margin-top: 135px;
+}
 
 img {
     width: 200px;
@@ -76,6 +87,7 @@ button {
     font-size: 1.5rem;
     cursor: pointer;
     border-radius: 25px;
+    border: solid 1px black;
 }
 
 footer {

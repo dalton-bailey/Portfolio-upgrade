@@ -39,9 +39,11 @@ function cardBack(pokedata) {
   backimage.src = `../images/Pokeball.png`
 
   let height = document.createElement('p')
+  height.className = 'height'
   height.textContent = "Height = " + pokedata.height
 
   let weight = document.createElement('p')
+  weight.className = 'weight'
   weight.textContent = "Weight = " + pokedata.weight
 
   cardBack.appendChild(backimage)
