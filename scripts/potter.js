@@ -1,18 +1,24 @@
 import { people } from '../data/potterpeople.js'
 
-const intro = document.querySelector('.intro')
-
-// const allCharacters = people.map(person => { 
-//     return {
-//         name: person.name,
-//         house: person.house,
-//         role: person. role
-//     }
-// })
+const allCharacters = people.map(person => { 
+    return {
+        name: person.name,
+        house: person.house,
+        role: person. role
+    }
+})
 
 const gryffindor = people.filter(person => person.house === "Gryffindor")
 
-console.log(gryffindor)
+const hufflepuff = people.filter(person => person.house === "Hufflepuff")
+
+const slytherin = people.filter(person => person.house === "Slytherin")
+
+const ravenclaw = people.filter(person => person.house === "Ravenclaw")
+
+console.log(gryffindor, allCharacters, hufflepuff, slytherin, ravenclaw)
+
+const intro = document.querySelector('.intro')
 
 const mainContainer = document.createElement('div')
 mainContainer.className = "container"
