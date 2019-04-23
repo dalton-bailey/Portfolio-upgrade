@@ -4,7 +4,7 @@ const allCharacters = people.map(person => {
     return {
         name: person.name,
         house: person.house,
-        role: person. role
+        role: person.role
     }
 })
 
@@ -16,12 +16,11 @@ const slytherin = people.filter(person => person.house === "Slytherin")
 
 const ravenclaw = people.filter(person => person.house === "Ravenclaw")
 
-console.log(gryffindor, allCharacters, hufflepuff, slytherin, ravenclaw)
+const phoenix = people.filter( person => person.orderOfThePhoenix)
+
+console.log(gryffindor, allCharacters, hufflepuff, slytherin, ravenclaw, phoenix)
 
 const intro = document.querySelector('.intro')
-
-const mainContainer = document.createElement('div')
-mainContainer.className = "container"
 
 gryffindor.forEach(person => {
     let personElement = document.createElement('div')
@@ -36,7 +35,5 @@ gryffindor.forEach(person => {
     
     personElement.appendChild(personImage)
     personElement.appendChild(nameElement)
-    mainContainer.appendChild(personElement)
-
-    intro.appendChild(mainContainer)
+    intro.appendChild(personElement)
 })
