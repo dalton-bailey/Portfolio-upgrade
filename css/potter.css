@@ -1,0 +1,9 @@
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.box {
+    margin: 4px;
+}
