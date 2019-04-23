@@ -20,7 +20,7 @@ console.log(sortedPlanets)
 const mainContainer = document.createElement('div')
 mainContainer.className = 'container'
 
-sortedPlanets.forEach((planet) => {
+sortedPlanets.forEach(planet => {
     let planetElement = document.createElement('div')
     planetElement.className = 'box'
 

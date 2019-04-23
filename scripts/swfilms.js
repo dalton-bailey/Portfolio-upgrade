@@ -14,11 +14,12 @@ const getLastNumber = (url) => {
 const sorted = films.sort((a,b) => (a.episode_id > b.episode_id) ? 1 : -1) 
 
 const allFilms = films.map(film => {
-    let imageURL = getLastNumber(film.url)
+    // let imageURL = getLastNumber(film.url)
     return {
         title: film.title,
         opening_crawl: film.opening_crawl,
-        imagePath: `https://starwars-visualguide.com/assets/img/films/${imageURL}.jpg`
+        // imagePath: `https://starwars-visualguide.com/assets/img/films/${imageURL}.jpg`
+        imagePath: `https://starwars-visualguide.com/assets/img/films/3.jpg`
     }
     
 })

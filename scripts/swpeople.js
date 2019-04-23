@@ -32,7 +32,7 @@ console.log(allHomeWorlds)
 const mainContainer = document.createElement('div')
 mainContainer.className = 'container'
 
-allHomeWorlds.forEach((person) => {
+allHomeWorlds.forEach(person => {
     let personElement = document.createElement('div')
     personElement.className = 'box'
 
