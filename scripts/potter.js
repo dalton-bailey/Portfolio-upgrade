@@ -1,10 +1,14 @@
 import { people } from '../data/potterpeople.js'
 
-const allCharacters = people.map(person => { 
+const sorted = people.sort((a,b) => (a.house > b.house) ? 1 : -1) 
+
+const allCharacters = people.map(person => {
+    let imageURL = person.house
     return {
         name: person.name,
         house: person.house,
-        role: person. role
+        role: person.role,
+        imagePath: `../images/${imageURL}.jpg`
     }
 })
 
@@ -16,14 +20,11 @@ const slytherin = people.filter(person => person.house === "Slytherin")
 
 const ravenclaw = people.filter(person => person.house === "Ravenclaw")
 
-console.log(gryffindor, allCharacters, hufflepuff, slytherin, ravenclaw)
+console.log(sorted)
 
-const intro = document.querySelector('.intro')
+const characters = document.querySelector('.intro')
 
-const mainContainer = document.createElement('div')
-mainContainer.className = "container"
-
-gryffindor.forEach(person => {
+allCharacters.forEach(person => {
     let personElement = document.createElement('div')
     personElement.className = 'box'
 
@@ -32,11 +33,14 @@ gryffindor.forEach(person => {
     nameElement.textContent = person.name
 
     let personImage = document.createElement('img')
-    personImage.src = `../images/gryffindor.jpg`
+    if (person.house === "Gryffindor" || person.house === "Hufflepuff" || person.house === "Slytherin" || person.house === "Ravenclaw") {
+        personImage.src = person.imagePath
+    }
+    else {
+        personImage.src = `../images/crest.jpg`
+    }
     
     personElement.appendChild(personImage)
     personElement.appendChild(nameElement)
-    mainContainer.appendChild(personElement)
-
-    intro.appendChild(mainContainer)
+    characters.appendChild(personElement)
 })
