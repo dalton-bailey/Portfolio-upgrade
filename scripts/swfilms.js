@@ -2,6 +2,8 @@ import { films } from '../data/films.js'
 
 const intro = document.querySelector('.intro')
 
+// Get the last number in URL that corresponds with imapge URL
+
 const getLastNumber = (url) => {
     let end = url.lastIndexOf('/')
     let start = end -2
@@ -11,8 +13,11 @@ const getLastNumber = (url) => {
     return url.slice(start, end)
 }
 
+// Sorts films by element id in order from 1 to 7
+
 const sorted = films.sort((a,b) => (a.episode_id > b.episode_id) ? 1 : -1) 
 
+// Filter films array to create new array with title, opening crawl, image
 const allFilms = films.map(film => {
     let imageURL = getLastNumber(film.url)
     return {
@@ -23,7 +28,9 @@ const allFilms = films.map(film => {
     
 })
 
-//console.log(allFilms)
+console.log(sorted)
+
+// Create HTML elements with content from new array
 
 const mainContainer = document.createElement('div')
 mainContainer.className = "container"

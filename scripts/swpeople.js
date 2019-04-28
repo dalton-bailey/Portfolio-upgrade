@@ -3,6 +3,7 @@ import { planets } from '../data/planets.js'
 
 const intro = document.querySelector('.intro')
 
+// Get the last number in URL that corresponds with imapge URL
 const getLastNumber = (url) => {
     let end = url.lastIndexOf('/')
     let start = end -2
@@ -12,7 +13,7 @@ const getLastNumber = (url) => {
     return url.slice(start, end)
 }
 
-
+// Filter people array to create new array with name, home world, eye color, and image
 const allHomeWorlds = people.map(person => {
     let foundWorld = planets.find(planet => {
         return planet.url === person.homeworld
@@ -28,6 +29,8 @@ const allHomeWorlds = people.map(person => {
 })
 
 console.log(allHomeWorlds)
+
+// Create HTML elements with content from new array
 
 const mainContainer = document.createElement('div')
 mainContainer.className = 'container'
