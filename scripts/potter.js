@@ -41,13 +41,6 @@ allCharacters.forEach(person => {
     nameElement.className = 'name'
     nameElement.textContent = person.name
 
-    let ministryElement = document.createElement('p')
-    ministryElement.className = 'ministry'
-
-    if (person.ministryOfMagic == true) {
-                
-    }
-
     let personImage = document.createElement('img')
     
     // If their house is know display image. Everything else display crest
