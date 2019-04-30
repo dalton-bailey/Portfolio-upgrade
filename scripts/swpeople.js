@@ -26,7 +26,7 @@ const allHomeWorlds = people.map(person => {
         eye_color: person.eye_color,
         personImagePath: `https://starwars-visualguide.com/assets/img/characters/${imageURL}.jpg`
     }
-})
+})  
 
 console.log(allHomeWorlds)
 

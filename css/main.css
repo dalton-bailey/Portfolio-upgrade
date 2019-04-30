@@ -12,6 +12,7 @@ html,body {
 
   #navbar {
     position: fixed;
+    background-color: white;
   }
 
   nav ul {

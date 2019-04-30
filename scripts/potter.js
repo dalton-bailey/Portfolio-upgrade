@@ -11,6 +11,8 @@ const allCharacters = people.map(person => {
         name: person.name,
         house: person.house,
         role: person.role,
+        ministry: person.ministryOfMagic,
+        pheonix: person.orderOfThePhoenix,
         imagePath: `../images/${imageURL}.jpg`
     }
 })
@@ -38,6 +40,13 @@ allCharacters.forEach(person => {
     let nameElement = document.createElement('p')
     nameElement.className = 'name'
     nameElement.textContent = person.name
+
+    let ministryElement = document.createElement('p')
+    ministryElement.className = 'ministry'
+
+    if (person.ministryOfMagic == true) {
+                
+    }
 
     let personImage = document.createElement('img')
     
