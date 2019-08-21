@@ -1,4 +1,4 @@
-import { planets } from '../data/planets.js'
+import { planets } from '../1600data/planets.js'
 
 const intro = document.querySelector('.intro')
 

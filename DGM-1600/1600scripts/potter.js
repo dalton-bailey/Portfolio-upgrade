@@ -1,4 +1,4 @@
-import { people } from '../data/potterpeople.js'
+import { people } from '../1600data/potterpeople.js'
 
 // const sorted = people.sort((a,b) => (a.house > b.house) ? 1 : -1) 
 
@@ -13,7 +13,7 @@ const allCharacters = people.map(person => {
         role: person.role,
         ministry: person.ministryOfMagic,
         pheonix: person.orderOfThePhoenix,
-        imagePath: `../images/${imageURL}.jpg`
+        imagePath: `../1600images/${imageURL}.jpg`
     }
 })
 
@@ -49,7 +49,7 @@ allCharacters.forEach(person => {
         personImage.src = person.imagePath
     }
     else {
-        personImage.src = `../images/crest.jpg`
+        personImage.src = `../1600images/crest.jpg`
     }
     
     personElement.appendChild(personImage)

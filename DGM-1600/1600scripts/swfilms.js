@@ -1,4 +1,4 @@
-import { films } from '../data/films.js'
+import { films } from '../1600data/films.js'
 
 const intro = document.querySelector('.intro')
 

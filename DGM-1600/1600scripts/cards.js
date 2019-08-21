@@ -1,4 +1,4 @@
-import { pokemon } from '../data/poke.js'
+import { pokemon } from '../1600data/poke.js'
 
 class Pokemon {
   constructor(name) {
@@ -19,9 +19,9 @@ function cardFront(pokedata) {
   let upperName = pokedata.name.charAt(0).toUpperCase() + pokedata.name.slice(1)
   name.textContent = pokedata.name
   if (pokedata.id !== 0) {
-    image.src = `../images/${pokedata.imageid}${upperName}.png`
+    image.src = `../1600images/${pokedata.imageid}${upperName}.png`
   } else {
-    image.src = `../images/Pokeball.png`
+    image.src = `../1600images/Pokeball.png`
   }
 
   figure.appendChild(image)
