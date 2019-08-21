@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="utf-8">
+    <title>Swag Shop</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet">
+    <link href="Unit10/css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- PAGE HEADER GOES HERE -->
+        <header>
+            <div class="logo"></div>
+            <h1>Swag Shop</h1>
+        </header>
+
+        <!-- PAGE NAVIGATION GOES HERE -->
+        <nav class="clearfix">
+            <button id="hamburgerBtn"></button>
+            <ul id="primaryNav" class="closed">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">PRODUCTS</a></li>
+                <li><a href="#">DEALS</a></li>
+                <li class="active"><a href="#">ORDER</a>
+                    <ul>
+                        <li><a href="#">Water Bottles</a></li>
+                        <li><a href="#">Hats</a></li>
+                        <li><a href="#">Shirts</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">CUSTOMER REVIEWS</a></li>
+            </ul>
+        </nav>
+
+        <!-- PAGE CONTENT GOES HERE -->
+        <main class="clearfix">
+            <h1>Order</h1>
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <legend>Customer Information</legend>
+                    <label class="top">Full Name<input type="text" name="fname lname" required></label>
+                    <label class="top">Phone<input type="text" name="phone" placeholder="1235551234" required></label>
+                    <label class="top">Email*<input type="text" name="email" placeholder="someone@gmail.com"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Swag Information</legend>
+                    <label class="top">Date Needed<input type="date" name="dateNeeded"></label>
+                    <label class="top">Business Name<input type="text" name="businessName"></label>
+                    <label class="top">Business URL<input type="url" name="url"></label>
+                    <label class="sbs">Color
+                        <select name="subject">
+                            <option value="">Please Select</option>
+                            <option value="red">Red</option>
+                            <option value="orange">Orange</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="green">Green</option>
+                            <option value="blue">Blue</option>
+                            <option value="purple">Purple</option>
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                            <option value="black">Black</option>
+                        </select>
+                    </label>
+                    <label class="top">Quantity<input type="number" name="quantity"></label>
+                    <div>Material</div>
+                    <label class="top"><input type="radio" name="audience" value="Aluminum">Aluminum</label>
+                    <label class="top"><input type="radio" name="audience" value="Plastic">Plastic</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Payment Information</legend>
+                    <label class="top">Name on Card*<input type="text" name="name" required></label>
+                    <label class="top">Card Number*<input type="number" name="cardNumber" required></label>
+                    <label class="top">Expiration Date*<input type="date" name="expiratinDate" required></label>
+                </fieldset>
+
+                <input type="submit" value="Order My Swag" class="submitBtn">
+            </form>
+        </main>
+
+        <!-- PAGE FOOTER GOES HERE -->
+        <footer>
+            <p>&copy; 2019 &bull; Bailey Dalton &bull; Login</p>
+        </footer>
+    </div>
+    <script src="js/menuToggle.js"></script>
+</body>
+
+</html>
