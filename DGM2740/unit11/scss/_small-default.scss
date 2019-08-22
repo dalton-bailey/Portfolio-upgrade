@@ -1,0 +1,161 @@
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+//Overall styling for the BODY of the document.
+div#wrapper {
+    max-width: 70rem;
+    margin: auto;
+}
+body {
+    font-family: $defaultFont;
+    font-weight: $normalWeight;
+    font-size: 10px;
+}
+
+//Overall styling for the HEADER of the document.
+header {
+    background-color: $primaryColor;
+    color: $fontColor;
+    padding: 1rem $gutter;
+    border-bottom: solid 2px $secondaryColor;
+
+    h1 {
+        font-size: 1.5rem;   
+    }
+}
+
+//Overall styling for the NAVIGATION of the document.
+    nav {
+        background-color: $primaryColor;
+        border-bottom: 1px solid rgba(0,0,0,0.3);
+
+        ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        ul li {
+            width: 100%;
+            border-right: 1px solid rgba(0,0,0,0.3);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        ul li img {
+            width: 50px;
+        }
+
+        ul li:last-child {
+            border-right: none;
+        }
+
+        ul li a {
+            width: 100%;
+            text-align: center;
+            font-weight: $boldWeight;
+            padding: 1rem;
+            text-decoration: none;
+            transition: background 0.75s ease, color  0.75s ease;
+        }
+
+        ul li p {
+            color: black;
+        }
+
+        ul li.active a {
+            width: 100%;
+            background-color: darken($secondaryColor, 10%);
+        }
+
+        ul li a:hover {
+            width: 100%;
+            background-color: $secondaryColor;
+        }
+    }
+
+//Overall styling for the MAIN of the document.
+main {
+
+    h1 {
+        font-size: 1.5rem;
+        padding: .5rem $gutter;
+        color: black;
+    }
+
+    .content {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+    }
+
+    .hotels {
+        background-color: $primaryColor;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        padding: 10px 15px 10px 15px; 
+        margin: 10px;
+    }
+
+    .banner img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    figcaption {
+        font-size: 1rem;
+        font-weight: bold;
+        color: white;
+        margin-top: -30px;
+        padding: 10px;
+    }
+
+    .information {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .location img {
+        width: 25px;
+    }
+
+    .phone img {
+        width: 25px;
+    }
+
+    .location {
+        height: 50px;
+        display: flex;
+        align-items: center;
+    }
+
+    .location p {
+        margin-left: 5px;
+        padding: 2px;
+        font-weight: bold;
+    }
+
+    .phone {
+        height: 50px;
+        display: flex;
+        align-items: center;
+    }
+
+    .phone p {
+        margin-left: 10px;
+        font-weight: bold;
+    }
+}
+
+
+//Clearfix: Force an Element not ot collapse.
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+} 

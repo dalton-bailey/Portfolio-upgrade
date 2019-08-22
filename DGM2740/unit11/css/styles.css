@@ -1,0 +1,203 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+div#wrapper {
+  max-width: 70rem;
+  margin: auto; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 10px; }
+
+header {
+  background-color: lavenderblush;
+  color: black;
+  padding: 1rem 2%;
+  border-bottom: solid 2px pink; }
+  header h1 {
+    font-size: 1.5rem; }
+
+nav {
+  background-color: lavenderblush;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
+  nav ul {
+    display: flex;
+    justify-content: center; }
+  nav ul li {
+    width: 100%;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  nav ul li img {
+    width: 50px; }
+  nav ul li:last-child {
+    border-right: none; }
+  nav ul li a {
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    padding: 1rem;
+    text-decoration: none;
+    transition: background 0.75s ease, color  0.75s ease; }
+  nav ul li p {
+    color: black; }
+  nav ul li.active a {
+    width: 100%;
+    background-color: #ff8da1; }
+  nav ul li a:hover {
+    width: 100%;
+    background-color: pink; }
+
+main h1 {
+  font-size: 1.5rem;
+  padding: 0.5rem 2%;
+  color: black; }
+main .content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 15px; }
+main .hotels {
+  background-color: lavenderblush;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  padding: 10px 15px 10px 15px;
+  margin: 10px; }
+main .banner img {
+  width: 100%;
+  border-radius: 10px; }
+main figcaption {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  margin-top: -30px;
+  padding: 10px; }
+main .information {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px; }
+main .location img {
+  width: 25px; }
+main .phone img {
+  width: 25px; }
+main .location {
+  height: 50px;
+  display: flex;
+  align-items: center; }
+main .location p {
+  margin-left: 5px;
+  padding: 2px;
+  font-weight: bold; }
+main .phone {
+  height: 50px;
+  display: flex;
+  align-items: center; }
+main .phone p {
+  margin-left: 10px;
+  font-weight: bold; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/*# sourceMappingURL=styles.css.map */

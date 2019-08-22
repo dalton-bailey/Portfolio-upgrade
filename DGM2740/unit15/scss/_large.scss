@@ -1,0 +1,289 @@
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+//Overall styling for the BODY of the document.
+body {
+    font-family: $defaultFont;
+    font-weight: $normalWeight;
+    font-size: 16px;
+}
+
+//Overall styling for the HEADER of the document. 
+header {
+    max-width: 70rem;
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 1px solid $fontColor;
+    margin: 0 auto; 
+
+    div {
+        padding-left: 2px;
+    }
+    h1 {
+        font-size: 2rem;
+        color: $primaryColor;  
+    }
+    h2 {
+        font-size: 1.3rem;
+        font-weight: $normalWeight;
+        color: $fontColor;
+        letter-spacing: .6rem;
+    }
+}
+
+//Overall styling for the NAVIGATION of the document.
+    nav {
+        max-width: 70rem;
+        margin: 0 auto; 
+        ul {
+            display: flex;
+            justify-content: flex-end;
+            margin: 10px 0 10px 0;
+        }
+
+        ul li a {
+            color: $fontColor;
+            text-decoration: none;
+            transition: background 0.75s ease, color  0.75s ease;
+            padding: 1rem;
+        }
+
+        ul li a img {
+            padding-right: 5px;
+        }
+
+        ul li a:hover {
+            color: $primaryColor;
+        }
+    }
+
+//Overall styling for the MAIN of the document.
+main {
+    figure.banner {
+        max-width: 70rem;
+        margin: 0 auto; 
+    }
+
+    figure.banner img {
+        width: 100%;
+    }
+
+    .top-section {
+        max-width: 90rem;
+        margin: 0 auto;
+        background-color: black;
+        margin-top: -2px;
+    
+        .sub-section {
+            max-width: 70rem;
+            margin: 0 auto;
+            padding-top: 1.5rem;
+            display: flex;
+            // flex-direction: column;
+            // align-items: center;
+            justify-content: space-between;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            color: $secondaryColor;
+        }
+
+        p {
+            line-height: 130%;
+            color: white;
+        }
+
+        .expect {
+            width: 75%;
+        }
+
+        .expect ul {
+            color: white;
+            margin: 1rem 0 2rem 6rem;
+        }
+
+        .italic {
+            font-style: italic;
+            margin-top: .5rem;
+        }
+
+        .formula {
+            display: flex;
+            flex-direction: column;
+            // align-items: center;
+            align-items: flex-end;
+        }
+
+        .formula p {
+            font-size: 1.2rem;
+        }
+
+        .formula h1 {
+            margin-bottom: .5rem;
+        }
+
+        .success {
+            margin-top: .5rem;
+            font-style: italic;
+        }
+    }
+    
+    .more {
+        max-width: 70rem;
+        // width: 25rem;
+        margin: 0 auto;
+        color: $primaryColor;
+        font-size: 2rem;
+        padding: 4rem 0 0 0;
+    }
+
+    .mid-section {
+        max-width: 70rem;
+        // width: 25rem;
+        margin: 0 auto;
+        column-count: 4;
+        // display: flex;
+        // flex-wrap: wrap;
+        // justify-content: space-between;
+        border-top: 1px solid $fontColor;
+        border-bottom: 1px solid $fontColor;
+        background-color: lighten($fontColor, 30%);
+        padding: 1rem 0 2rem 0;
+
+        .column {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .column img {
+            width: 100%;
+        }
+
+        h1 {
+            color: $primaryColor;
+            font-size: 2rem;
+            margin: 1rem 0 .5rem 0;
+        }
+
+        p {
+            color: $fontColor;
+            line-height: 120%;
+        }
+    }
+
+    .grid {
+        max-width: 70rem;
+        // width: 25rem;
+        margin: 0 auto;
+        min-height: 20rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        background-color: lighten($fontColor, 30%);
+        padding: 1rem 0 5rem 0;
+        
+        h1 {
+            font-size: 2rem;
+            margin: 1.5rem 0 .5rem 0;
+            color: $primaryColor;
+        }
+     
+         div.teaser {
+             position: relative;
+         }
+     
+         div.teaser p {
+             display: block;
+             bottom: 0;
+             width: 100%;
+             color: $fontColor;
+             font-size: 1.5rem;
+         }
+     
+         div img {
+             display: block;
+             width: 100%;
+         }
+     
+         div.firstTop {
+             grid-row: 1;
+             grid-column: 1 / span 1;
+            grid-row: 1;
+            
+         }
+     
+         div.secondTop {
+             grid-row: 1;
+             grid-column: 2 / span 1;
+         }
+
+         div.thirdTop {
+             grid-row: 1 / span 2;
+             grid-column: 3 / span 1;
+
+            div {
+                 display: flex;
+                 flex-direction: column;
+                 align-items: center;
+                 justify-content: space-between;
+                 color: $fontColor;
+                 margin-top: -6rem;
+                 height: 5rem;
+
+                 button {
+                    border-radius: 1rem;
+                    font-size: 1.2rem;
+                    color: white;
+                    border: none;
+                    padding: .5rem 4rem .5rem 4rem;
+                    background-image: linear-gradient($primaryColor, #014166 );
+                 }
+             }
+         }
+
+         div.bottom {
+             grid-row: 2;
+             grid-column: 1 / span 2;
+         }
+     
+    }
+
+    .companies {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .companies figure {
+        padding: 10px;
+    }
+    
+}
+
+//Overall styling for the FOOTER of the document.
+footer {
+    width: 100%;
+    background-image: linear-gradient($primaryColor, #014166 );
+
+    p {
+        max-width: 70rem;
+        margin: 0 auto;
+        color: white;
+        padding: 1rem;
+        font-size: 1rem;
+        font-weight: $boldWeight;
+    }
+}
+
+//Clearfix: Force an Element not ot collapse.
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+} 
+
+

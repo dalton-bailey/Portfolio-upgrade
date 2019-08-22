@@ -1,0 +1,61 @@
+//Overall styling for the NAVIGATION of the document.
+nav {
+    position: relative;
+
+    button {
+        display: none
+    }
+
+    ul.closed {
+        display: block;
+    }
+
+    ul {
+        margin-left: $gutter;
+        // border-left: 1px solid rgba(0,0,0,0.3);
+        }
+
+    ul li {
+       float: left;
+    }
+
+    ul li a {
+        border: none;
+       
+    }
+
+    ul li ul {
+        left: -999em;
+        z-index: 99;
+        background-color: lighten($secondaryColor, 10%);
+        position: absolute;
+        width: 10rem;
+    }
+
+    ul li:hover ul {
+        left: auto;
+    } 
+
+    ul li ul li {
+        float: none;
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+    }
+}
+
+//Overall styling for the MAIN of the document.
+main {
+    figure.photo {
+        width: 33.3%-$gutterdbl;
+        margin: .5rem $gutter;
+        float: left;
+    }
+
+    div.blog article {
+        float: left;
+        width: 50%-$gutterdbl;
+    }
+
+    div.blog article:nth-child(2n+1) {
+        clear:left;
+    }
+}
