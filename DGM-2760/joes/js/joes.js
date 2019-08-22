@@ -24,7 +24,7 @@ dateObj.appendChild(newDate)
 
 let userName = document.createElement('p')
 userName.className = 'name'
-userName.textContent = 'Hello ' + prompt("What's your name?") + ", welcome to Joe's."
+userName.textContent = 'Hello ' + prompt("What is your first name?") + ", welcome to Joe's."
 name.appendChild(userName)
 
 console.log(userName)
