@@ -11,6 +11,7 @@ const mainContainer = document.querySelector('.container')
 function cardFront(pokedata) {
   let cardFront = document.createElement('div')
   cardFront.className = 'card__face'
+  
   let figure = document.createElement('figure')
 
   let name = document.createElement('figcaption')
