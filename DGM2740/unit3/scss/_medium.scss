@@ -1,0 +1,17 @@
+//Overall styling for the MAIN of the document.
+main {
+    figure.photo {
+        width: 50%-$gutterdbl;
+        margin: .5rem $gutter;
+        float: left;
+    }
+
+    div.blog article {
+        float: left;
+        width: 50%-$gutterdbl;
+    }
+
+    div.blog article:nth-child(2n+1) {
+        clear:left;
+    }
+}

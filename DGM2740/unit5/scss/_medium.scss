@@ -1,0 +1,26 @@
+//Overall styling for the MAIN of the document.
+main {
+    figure.photo {
+        width: 50%-$gutterdbl;
+        margin: .5rem $gutter;
+    }
+
+    figure.photo img {
+        // width: 58.3vw;
+        margin: 1rem 0 0 $gutter;
+        float: right;
+    }
+
+    div.blog article {
+        float: left;
+        width: 50%-$gutterdbl;
+    }
+
+    div.blog article:nth-child(2n+1) {
+        clear:left;
+    }
+
+    p.story {
+        column-count: 2;
+    }
+}

@@ -1,0 +1,47 @@
+//Overall styling for the MAIN of the document.
+
+nav {
+    position: relative;
+
+    button {
+        display: none
+    }
+
+    ul.closed {
+        display: block;
+    }
+
+    ul {
+        margin-left: $gutter;
+        border-left: 1px solid rgba(0,0,0,0.3);
+        }
+
+    ul li {
+       float: left;
+    }
+
+    ul li:last-child {
+        border-right: 1px solid rgba(0,0,0,0.3);
+    }
+
+    ul li a {
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.2);
+        padding: .5rem 1rem;
+    }
+
+    ul li a:hover {
+            color: $secondaryColor;
+            background-color: $primaryColor;
+        }
+
+    
+}
+ main {
+
+@for $i from 1 through 12{
+    $w: ($i / 12) * 100%;
+    .medium-#{$i} {width: $w; float: left;}
+}
+
+}

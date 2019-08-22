@@ -1,0 +1,156 @@
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+//Overall styling for the BODY of the document.
+body {
+    font-family: $defaultFont;
+    font-weight: $normalWeight;
+    font-size: 16px;
+}
+
+//Overall styling for the HEADER of the document.
+header {
+    display: flex;
+    align-items: center;
+    background-color: $primaryColor;
+    color: $fontColor;
+    padding: 1rem $gutter;
+
+    div {
+        margin-left: 10px;
+    }
+
+    h1 {
+        font-size: 3rem;
+        font-weight: $normalWeight;    
+    }
+
+    h2 {
+        font-size: 2rem;
+        font-weight: $normalWeight;
+    }
+
+    figure img {
+        width: 100px;
+        border-radius: 25px;
+    }
+}
+
+//Overall styling for the NAVIGATION of the document.
+    nav {
+        background-color: $secondaryColor;
+        border-bottom: 1px solid rgba(0,0,0,0.3);
+
+        ul li {
+            float: left;
+            width: 25%;
+            border-right: 1px solid rgba(0,0,0,0.3);
+        }
+
+        ul li:last-child {
+            border-right: none;
+        }
+
+        ul li a {
+            display: block;
+            text-align: center;
+            font-weight: $boldWeight;
+            padding: .5rem 0;
+            color: $primaryColor;
+            text-decoration: none;
+            transition: background 0.75s ease, color  0.75s ease;
+        }
+
+        ul li.active a {
+            background-color: darken($secondaryColor, 10%);
+        }
+
+        ul li a:hover {
+            color: $secondaryColor;
+            background-color: $primaryColor;
+        }
+    }
+
+//Overall styling for the MAIN of the document.
+main {
+    figure.banner {
+        width: 100%;
+    }
+
+    figure.banner img {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin: 1rem 0 0 $gutter;
+        color: $secondaryColor;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin: .75rem 0 0 $gutter;
+        color: lighten( $fontColor, 40% );
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        color: lighten( $fontColor, 30% );
+    }
+
+    p {
+        line-height: 130%;
+        color: $fontColor;
+        margin: 1rem 0 0 $gutter;
+    }
+    
+    p.story {
+        column-count: 1;
+    }
+
+    figure.photo {
+        width: 100%-$gutterdbl;
+        margin: 1rem 0 0 $gutter;
+        float: right;
+    }
+    figure.photo img {
+        width: 100%;
+        margin: 1rem 0 0 $gutter;
+        float: right;
+    }
+
+    figure.photo figcaption {
+        text-align: center;
+        color: $secondaryColor;
+    }
+
+    article.founder {
+        margin-bottom: 1rem;
+    }
+
+    div.blog article {
+        margin: .5rem $gutter;
+        width: 100%-$gutterdbl;
+    }
+
+}
+
+//Overall styling for the FOOTER of the document.
+footer {
+    width: 100%;
+    background-color: $primaryColor;
+
+    p {
+        text-align: center;
+        color: $secondaryColor;
+        padding: .75rem;
+        font-size: .9rem;
+    }
+}
+
+//Clearfix: Force an Element not ot collapse.
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+} 

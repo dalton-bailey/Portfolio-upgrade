@@ -1,0 +1,19 @@
+//Overall styling for the BODY of the document.
+div#wrapper {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+//Overall styling for the NAVIGATION of the document.
+
+//Overall styling for the MAIN of the document.
+main {
+  //Column Layout
+
+@for $i from 1 through 12{
+    $w: ($i / 12) * 100%;
+    .large-#{$i} {width: $w; float: left;}
+}
+
+
+}

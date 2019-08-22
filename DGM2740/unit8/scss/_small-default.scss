@@ -1,0 +1,190 @@
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+//Overall styling for the BODY of the document.
+body {
+    font-family: $defaultFont;
+    font-weight: $normalWeight;
+    font-size: 16px;
+}
+
+//Overall styling for the HEADER of the document.
+header {
+    background-color: $primaryColor;
+    color: $fontColor;
+    padding: 1rem $gutter;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .logo {
+        width: 200px;
+        border-radius: 25px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        font-weight: $normalWeight;    
+    }
+    h2 {
+        font-size: 1.5rem;
+        font-weight: $normalWeight;
+    }
+
+    ul.social {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    ul.social li {
+        list-style-type: none;
+    }
+
+    ul.social li a {
+        font-size: 3rem;
+        padding-left: .5rem;
+        color: $secondaryColor;
+    }
+
+    ul.social li a:hover {
+        color: white;
+    }
+
+    .search input[type=text] {
+        border: none;
+        font-size: .8rem;
+      }
+}
+
+//Overall styling for the NAVIGATION of the document.
+    nav {
+        background-color: $menuColor;
+        width: 100%;
+        border-bottom: 1px solid rgba(0,0,0,0.3);
+
+        button {
+            background-image: url(../photos/menuIconWhite.png);
+            background-repeat: no-repeat;
+            width: 72px;
+            height: 32px;
+            background-color: rgba(0,0,0,0.1);
+            background-size: 86%;
+            background-position: center center;
+            border: 1px solid rgba(0, 0, 0,0.2);
+            border-radius: 10px;
+            margin: 6px 0 6px 2%;
+        }
+        
+        ul.closed {
+            display: none;
+        }
+
+        ul li a {
+            display: block;
+            padding: .7rem 2%;
+            color: #fff;
+            text-decoration: none;
+            border-bottom: solid 1px rgba(0, 0, 0,0.3);
+            transition: background 0.75s ease, color  0.75s ease;
+        }
+
+        ul li.active a {
+            background-color: darken($secondaryColor, 10%);
+        } 
+    }
+
+//Overall styling for the MAIN of the document.
+main {
+   max-width: 60rem;
+   min-height: 20rem;
+   padding: 1rem 2%;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-column-gap: 10px;
+   grid-row-gap: 10px;
+   
+   h1 {
+       font-size: 2rem;
+       margin: 1.5rem 0 .5rem 0;
+       color: $primaryColor;
+   }
+
+   h2 {
+       font-size: 1.2rem;
+       margin: 1.1rem 0 .2rem 0;
+       color: lighten($primaryColor, 20%);
+    }
+
+    div.teaser {
+        position: relative;
+    }
+
+    div.teaser span {
+        position: absolute;
+        display: block;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.3);
+        width: 100%;
+        padding: .3rem 2%;
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    div img {
+        display: block;
+        width: 100%;
+    }
+
+    div.lead {
+        grid-row: 1;
+        grid-column: 1 / span 2;
+    }
+
+    div.secondTop {
+        grid-row: 2;
+        grid-column: 1 / span 2;
+    }
+
+    div.secondBottom {
+        grid-row: 3;
+        grid-column: 1 / span 2;
+    }
+    
+}
+//Overall styling for the FOOTER of the document.
+footer {
+    width: 100%;
+    background-color: $primaryColor;
+
+    .footer {
+        column-count: 1;
+        text-align: center;
+        padding: 20px 30px 60px 30px;
+    }
+    
+    .footer div {
+        padding: 10px;
+    }
+
+    .copyright {
+        text-align: center;
+        color: $secondaryColor;
+        padding: .75rem;
+        font-size: .9rem;
+    }
+
+    .top {
+        font-weight: bold;
+    }
+
+    .section p {
+        padding: 3px
+    }
+}
+
+//Clearfix: Force an Element not ot collapse.
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+} 

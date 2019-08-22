@@ -1,0 +1,34 @@
+//Overall styling for the BODY of the document.
+div#wrapper {
+    max-width: 75rem;
+    margin: auto;
+}
+
+//Overall styling for the NAVIGATION of the document.
+nav {
+    ul {
+        margin-left: $gutter;
+        border-left: 1px solid rgba(0,0,0,0.3);
+    }
+
+    ul li {
+        width: auto;
+    }
+
+    ul li:last-child {
+        border-right: 1px solid rgba(0,0,0,0.3);
+    }
+
+    ul li a {
+        padding: .5rem 1rem;
+    }
+}
+
+//Overall styling for the MAIN of the document.
+main {
+    
+   .members {
+       column-count: 4;
+   }
+
+}

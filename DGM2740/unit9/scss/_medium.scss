@@ -1,0 +1,54 @@
+//Overall styling for the NAVIGATION of the document.
+a.humburgerOpen, a.humburgerClose {
+    display: none;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    height: auto;
+    background-image: linear-gradient(to right, $secondaryColor , #05DBF2);
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    max-width: 64rem;
+
+    ul {
+        margin-left: $gutter;
+    }
+
+    ul li {
+        float: left;
+        width: 16%;
+        // border-right: 1px solid rgba(0,0,0,0.3);
+    }
+
+    ul li:last-child {
+        border-right: none;
+    }
+
+    ul li a {
+        display: block;
+        text-align: center;
+        font-weight: $boldWeight;
+        padding: .5rem 0;
+        color: $primaryColor;
+        text-decoration: none;
+        transition: background 0.75s ease, color  0.75s ease;
+    }
+
+    ul li.active a {
+        background-color: darken($secondaryColor, 10%);
+    }
+
+    ul li a:hover {
+        color: $secondaryColor;
+        background-color: $primaryColor;
+    }
+
+}
+
+//Overall styling for the MAIN of the document.
+main {
+    a.coolTrick {
+        width: 46%;
+    }
+}

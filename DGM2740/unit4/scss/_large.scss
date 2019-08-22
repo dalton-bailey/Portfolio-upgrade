@@ -1,0 +1,65 @@
+//Overall styling for the BODY of the document.
+div#wrapper {
+    max-width: 60rem;
+    margin: auto;
+}
+
+header {
+    margin-left: 85px;
+}
+body {
+    figure.banner {
+        width: 100%;
+        background-color: $secondaryColor;
+    }
+
+    figure.banner img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+}
+
+//Overall styling for the NAVIGATION of the document.
+nav {
+    ul {
+        margin-left: 96px;
+        border-left: 1px solid rgba(0,0,0,0.3);
+    }
+
+    ul li {
+        width: auto;
+    }
+
+    ul li:last-child {
+        border-right: 1px solid rgba(0,0,0,0.3);
+    }
+
+    ul li a {
+        padding: .5rem 1rem;
+    }
+}
+
+//Overall styling for the MAIN of the document.
+main {
+    figure.photo {
+        width: 25%-$gutterdbl;
+        margin: .5rem $gutter;
+        float: left;
+    }
+
+    div.blog article {
+        float:left;
+        width: 33.33%-$gutterdbl;
+    }
+
+    div.blog article:nth-child(2n+1) {
+        clear:none;
+    }
+
+    div.blog article:nth-child(3n+1) {
+        clear:left;
+    }
+
+}

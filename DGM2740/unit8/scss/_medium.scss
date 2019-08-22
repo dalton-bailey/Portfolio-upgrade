@@ -1,0 +1,66 @@
+//Overall styling for the NAVIGATION of the document.
+nav {
+    position: relative;
+
+    button {
+        display: none
+    }
+
+    ul.closed {
+        display: block;
+    }
+
+    ul {
+        margin-left: $gutter;
+        border-left: 1px solid rgba(0,0,0,0.3);
+        }
+
+    ul li {
+       float: left;
+    }
+
+    ul li:last-child {
+        border-right: 1px solid rgba(0,0,0,0.3);
+    }
+
+    ul li a {
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.2);
+        padding: .5rem 1rem;
+    }
+
+    ul li a:hover {
+            color: $secondaryColor;
+            background-color: $primaryColor;
+        }
+
+    
+}
+
+//Overall styling for the MAIN of the document.
+main {
+    div.lead {
+        grid-row: 1 / span 2;
+        grid-column: 1;
+    }
+
+    div.secondTop {
+        grid-row: 1;
+        grid-column: 2;
+        align-self: start;
+    }
+
+    div.secondBottom {
+        grid-row: 2;
+        grid-column: 2;
+        align-self: end;
+    }
+    
+}
+
+footer {
+    .footer {
+        column-count: 2;
+    }
+
+}
