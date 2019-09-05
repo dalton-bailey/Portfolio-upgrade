@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="utf-8">
+    <title>Guessing Game</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="DGM-2760/game/game.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- PAGE HEADER GOES HERE -->
+    <header class='header'>
+        <img src="DGM-2760/joes/images/joes.png" alt="bed & breakfast">
+        <div class="top"></div>
+    </header>
+
+    <!-- PAGE NAVIGATION GOES HERE -->
+    <main>
+        <h1>Hi/Low Guessing Game</h1>
+        <h2>What I learned</h2>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div>
+            <h2>Instructions</h2>
+            <p>The object of the game is to guess a random number between 1 and 15 in as few tries as possible.</p>
+        </div>
+<section>
+        <article class="a1">
+                <h2>Play</h2>
+                <div>
+                    <input id="guess" type="number" placeholder="number"/>
+                    <button onclick="evalGuess()">Guess</button>
+                </div>
+            </article>
+    
+            <article class="a2">
+                <h2>Trys</h2>
+                <div id="attempts"></div>
+            </article>
+    
+            <article class="a3">
+                <h2>Feedback</h2>
+                <div id="feedback"></div>
+            </article>
+    
+            <article class="a4">
+                <h2>Award</h2>
+                <div id="ribbon"></div>
+            </article>
+</section>
+        
+
+
+    </main>
+
+    <!-- PAGE CONTENT GOES HERE -->
+
+    <!-- PAGE FOOTER GOES HERE -->
+    <footer>
+        <p>&copy; 2019 Bailey Dalton</p>
+    </footer>
+    <script src="DGM-2760/game/game.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
+    max-width: 75rem;
+}
+
+.header {
+    position: relative;
+}
+
+.top {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+header img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+.companyName, .slogan {
+    color: white;
+}
+
+.companyName {
+    font-size: 2.5rem;
+}
+
+.slogan {
+    font-size: 2rem;
+}
+
+main h1 {
+    color: #234B4B;
+}
+
+main h2 {
+    color: #769784;
+}
+
+ul {
+    color: #234B4B;
+}
+
+footer {
+    text-align: center;
+    background-color: #769784;
+    color: white;
+}
+
+footer p {
+    padding: .5rem;
+}
+
+
+

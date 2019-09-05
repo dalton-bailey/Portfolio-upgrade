@@ -32,8 +32,8 @@ header {
 
         ul li {
             float: left;
-            width: 50%;
-            border-right: solid 1px white;
+            width: 25%;
+            // border-right: solid 1px white;
         }
 
         ul li:last-child {
@@ -68,7 +68,7 @@ main {
         font-weight: $normalWeight;
     }
     img {
-        max-width: 200px;
+        max-width: 100%;
     }
         
     #desktop {

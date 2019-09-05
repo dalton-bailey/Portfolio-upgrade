@@ -10,9 +10,8 @@ body {
 
 //Overall styling for the HEADER of the document.
 header {
-    background-color: $primaryColor;
     color: $fontColor;
-    padding: 1rem $gutter;
+    padding: 1rem;
 
     h1 {
         font-size: 2rem;
@@ -72,7 +71,7 @@ main {
     h1 {
         font-size: 2rem;
         margin: 1rem 0 0 $gutter;
-        color: $secondaryColor;
+        color: $fontColor;
     }
 
     h2 {
@@ -92,8 +91,9 @@ main {
     }
 
     figure.photo {
-        width: 100%-$gutterdbl;
+        width: 50%-$gutterdbl;
         margin: .5rem $gutter;
+        float: left;
     }
     figure.photo img {
         width: 100%;
@@ -101,12 +101,13 @@ main {
 
     figure.photo figcaption {
         text-align: center;
-        color: $secondaryColor;
+        color: $fontColor;
     }
 
     div.blog article {
-        margin: .5rem $gutter;
-        width: 100%-$gutterdbl;
+        float: left;
+        // margin: .5rem $gutter;
+        // width: 25%-$gutterdbl;
     }
 }
 

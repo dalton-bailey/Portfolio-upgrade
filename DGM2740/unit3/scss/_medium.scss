@@ -1,14 +1,29 @@
+//Overall styling for the NAVIGATION of the document.
+nav {
+
+    ul li {
+        width: auto;
+    }
+
+    // ul li:last-child {
+    //     border-right: 1px solid rgba(0,0,0,0.3);
+    // }
+
+    ul li a {
+        padding: .5rem 1rem;
+    }
+}
 //Overall styling for the MAIN of the document.
 main {
     figure.photo {
-        width: 50%-$gutterdbl;
+        width: 33.33%-$gutterdbl;
         margin: .5rem $gutter;
         float: left;
     }
 
     div.blog article {
         float: left;
-        width: 50%-$gutterdbl;
+        width: 33.33%-$gutterdbl;
     }
 
     div.blog article:nth-child(2n+1) {

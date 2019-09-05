@@ -103,7 +103,7 @@ body {
 header {
   display: flex;
   align-items: center;
-  background-color: lightblue;
+  background-color: #F4DED0;
   color: black;
   padding: 1rem 2%; }
   header div {
@@ -115,16 +115,14 @@ header {
     font-size: 2rem;
     font-weight: 300; }
   header figure img {
-    width: 100px;
-    border-radius: 25px; }
+    width: 100px; }
 
 nav {
-  background-color: darkblue;
+  background-color: #F28F79;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
   nav ul li {
     float: left;
-    width: 25%;
-    border-right: 1px solid rgba(0, 0, 0, 0.3); }
+    width: 25%; }
   nav ul li:last-child {
     border-right: none; }
   nav ul li a {
@@ -132,14 +130,14 @@ nav {
     text-align: center;
     font-weight: 700;
     padding: .5rem 0;
-    color: lightblue;
+    color: #F4DED0;
     text-decoration: none;
     transition: background 0.75s ease, color  0.75s ease; }
   nav ul li.active a {
-    background-color: #000058; }
+    background-color: #ed684b; }
   nav ul li a:hover {
-    color: darkblue;
-    background-color: lightblue; }
+    color: #F28F79;
+    background-color: #F4DED0; }
 
 main figure.banner {
   width: 100%; }
@@ -148,7 +146,7 @@ main figure.banner img {
 main h2 {
   font-size: 2rem;
   margin: 1rem 0 0 2%;
-  color: darkblue; }
+  color: #F28F79; }
 main h1 {
   font-size: 1.5rem;
   margin: 0.75rem 0 0 2%;
@@ -172,7 +170,7 @@ main figure.photo img {
   float: right; }
 main figure.photo figcaption {
   text-align: center;
-  color: darkblue; }
+  color: #F28F79; }
 main article.founder {
   margin-bottom: 1rem; }
 main div.blog article {
@@ -181,10 +179,10 @@ main div.blog article {
 
 footer {
   width: 100%;
-  background-color: lightblue; }
+  background-color: #F4DED0; }
   footer p {
     text-align: center;
-    color: darkblue;
+    color: #F28F79;
     padding: .75rem;
     font-size: .9rem; }
 
@@ -194,6 +192,13 @@ footer {
   clear: both; }
 
 @media only screen and (min-width: 560px) {
+  nav ul {
+    margin-left: 2%; }
+  nav ul li {
+    width: auto; }
+  nav ul li a {
+    padding: .5rem 1rem; }
+
   main figure.photo {
     width: 46%;
     margin: 0.5rem 2%; }
@@ -211,16 +216,6 @@ footer {
   div#wrapper {
     max-width: 75rem;
     margin: auto; }
-
-  nav ul {
-    margin-left: 2%;
-    border-left: 1px solid rgba(0, 0, 0, 0.3); }
-  nav ul li {
-    width: auto; }
-  nav ul li:last-child {
-    border-right: 1px solid rgba(0, 0, 0, 0.3); }
-  nav ul li a {
-    padding: .5rem 1rem; }
 
   main figure.photo {
     width: 21%;

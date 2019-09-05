@@ -96,7 +96,7 @@ html {
   box-sizing: border-box; }
 
 body {
-  font-family: "Merriweather", serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 300;
   font-size: 16px;
   margin: auto;
@@ -104,9 +104,9 @@ body {
 
 header {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   background-color: white;
-  color: black;
+  color: #2E402E;
   padding: 0.5rem 2%; }
   header div {
     margin-left: 10px; }
@@ -117,14 +117,16 @@ header {
     font-size: 1.5rem;
     font-weight: 300; }
   header figure img {
-    border-radius: 25px; }
+    width: 100px; }
 
 nav {
-  background-color: green;
-  border-top: 3px solid lightgreen; }
+  background-color: #5C805C;
+  border-top: 3px solid #8ABF8B; }
+  nav ul {
+    display: flex;
+    flex-wrap: wrap; }
   nav ul li {
-    float: left;
-    width: 25%;
+    width: 50%;
     border-right: 1px solid rgba(0, 0, 0, 0.3); }
   nav ul li:last-child {
     border-right: none; }
@@ -137,9 +139,9 @@ nav {
     text-decoration: none;
     transition: background 0.75s ease, color  0.75s ease; }
   nav ul li.active a {
-    background-color: #004d00; }
+    background-color: #476247; }
   nav ul li a:hover {
-    color: green;
+    color: #5C805C;
     background-color: white; }
 
 main figure.banner {
@@ -150,22 +152,23 @@ main .content {
   margin: 0.5rem 2%; }
 main h2 {
   font-size: 2rem;
-  color: green;
-  margin-bottom: 1rem; }
+  color: #5C805C;
+  margin-bottom: .5rem; }
 main p {
   line-height: 130%;
-  color: black; }
+  color: #2E402E; }
 main figure.photo {
-  width: 96%;
+  width: 100%;
   float: right; }
 main figure.photo img {
   width: 100%; }
 main div.blog article {
-  width: 96%; }
+  width: 96%;
+  font-family: 'Merriweather', serif; }
 
 footer {
   width: 100%;
-  background-color: green; }
+  background-color: #5C805C; }
   footer p {
     text-align: center;
     color: white;
@@ -178,6 +181,9 @@ footer {
   clear: both; }
 
 @media only screen and (min-width: 560px) {
+  nav ul li {
+    width: 25%; }
+
   main {
    /* div.blog article {
         float: left;
@@ -190,10 +196,6 @@ footer {
     main figure.photo {
       width: 46%; } }
 @media only screen and (min-width: 1140px) {
-  div#wrapper {
-    max-width: 85rem;
-    margin: auto; }
-
   header {
     max-width: 75rem;
     margin: auto; }
@@ -213,6 +215,4 @@ footer {
     max-width: 75rem;
     margin: auto; }
     main figure.photo {
-      width: 21%; }
-    main .content {
-      margin: 1rem 0 0 0; } }
+      width: 25%; } }

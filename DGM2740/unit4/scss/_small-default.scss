@@ -27,16 +27,16 @@ body {
 //Overall styling for the HEADER of the document.
 header {
     color: $fontColor;
-    padding: 1rem $gutter;
-    margin-top: -90px;
+    padding: 0rem 1rem 0rem 1rem;
+    margin-top: -4.5rem;
     position: absolute;
 
     h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
         font-weight: $normalWeight;   
     }
     h2 {
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-weight: $normalWeight;
     }
 }
@@ -49,7 +49,6 @@ header {
         ul li {
             float: left;
             width: 25%;
-            border-right: 1px solid rgba(0,0,0,0.3);
         }
 
         ul li:last-child {
@@ -61,7 +60,7 @@ header {
             text-align: center;
             font-weight: $boldWeight;
             padding: .5rem 0;
-            color: $fontColor;
+            color: $blockColor;
             text-decoration: none;
             transition: background 0.75s ease, color  0.75s ease;
         }
@@ -81,54 +80,44 @@ main {
     padding-bottom: 50px;
     
     h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
         margin: 1rem 0 0 $gutter;
         color: $secondaryColor;
     }
 
     h2 {
-        font-size: 1.5rem;
-        margin: .75rem 0 0 $gutter;
-        color: lighten( $fontColor, 40% );
-    }
-
-    h3 {
-        font-size: 1.2rem;
-        color: lighten( $blockColor, 30% );
-    }
-
-    p {
-        line-height: 130%;
+        font-size: 2rem;
+        margin: 1rem 0 .5rem $gutter;
         color: $blockColor;
-    }
-
-    figure.photo {
-        width: 100%-$gutterdbl;
-        margin: .5rem $gutter;
-    }
-    figure.photo img {
-        width: 100%;
-    }
-
-    figure.photo figcaption {
-        text-align: center;
-        color: $secondaryColor;
+        // color: lighten( $fontColor, 40% );
     }
 
     div.blog article {
         margin: .5rem $gutter;
         width: 100%-$gutterdbl;
     }
+
+    h3 {
+        font-size: 1.5rem;
+        color: $blockColor;
+        margin: 1rem 0rem 1rem 0rem;
+        // color: lighten( $blockColor, 30% );
+    }
+
+    p {
+        line-height: 130%;
+        color: $blockColor;
+    }
 }
 
 //Overall styling for the FOOTER of the document.
 footer {
     width: 100%;
-    background-color: $primaryColor;
+    background-color: $secondaryColor;
 
     p {
         text-align: center;
-        color: $secondaryColor;
+        color: $blockColor;
         padding: .75rem;
         font-size: .9rem;
     }

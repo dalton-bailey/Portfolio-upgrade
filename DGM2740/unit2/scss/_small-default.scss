@@ -13,7 +13,7 @@ body {
 //Overall styling for the HEADER of the document.
 header {
     display:flex;
-    align-items: flex-end;
+    align-items: center;
     background-color: $primaryColor;
     color: $fontColor;
     padding: .5rem $gutter;
@@ -29,21 +29,27 @@ header {
     h2 {
         font-size: 1.5rem;
         font-weight: $normalWeight;
+        // display: none;
     }
 
     figure img {
-        border-radius: 25px;
+        width: 100px;
     }
 }
 
 //Overall styling for the NAVIGATION of the document.
     nav {
         background-color: $secondaryColor;
-        border-top: 3px solid lightgreen;
+        border-top: 3px solid #8ABF8B;
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
 
         ul li {
-            float: left;
-            width: 25%;
+            // float: left;
+            width: 50%;
             border-right: 1px solid rgba(0,0,0,0.3);
         }
 
@@ -88,7 +94,7 @@ main {
     h2 {
         font-size: 2rem;
         color: $secondaryColor;
-        margin-bottom: 1rem;
+        margin-bottom: .5rem;
     }
 
     p {
@@ -97,7 +103,7 @@ main {
     }
 
     figure.photo {
-        width: 100%-$gutterdbl;
+        width: 100%;
         float: right;
     }
     
@@ -107,6 +113,7 @@ main {
 
     div.blog article {
         width: 100%-$gutterdbl;
+        font-family:  'Merriweather', serif;
     }
 }
 

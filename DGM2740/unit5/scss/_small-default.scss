@@ -32,7 +32,6 @@ header {
 
     figure img {
         width: 100px;
-        border-radius: 25px;
     }
 }
 
@@ -44,7 +43,7 @@ header {
         ul li {
             float: left;
             width: 25%;
-            border-right: 1px solid rgba(0,0,0,0.3);
+
         }
 
         ul li:last-child {

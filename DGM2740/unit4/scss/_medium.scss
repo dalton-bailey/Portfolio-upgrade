@@ -1,3 +1,16 @@
+//Overall styling for the NAVIGATION of the document.
+nav {
+    ul li {
+        width: auto;
+    }
+
+    ul li a {
+        padding: .5rem 1rem;
+    }
+}
+
+
+
 //Overall styling for the MAIN of the document.
 main {
     figure.photo {

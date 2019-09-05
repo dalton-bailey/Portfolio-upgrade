@@ -1,8 +1,4 @@
 //Overall styling for the BODY of the document.
-div#wrapper {
-    max-width: 85rem;
-    margin: auto;
-}
 header {
     max-width: 75rem;
     margin: auto;
@@ -35,11 +31,12 @@ main {
     margin: auto;
     
     figure.photo {
-        width: 25%-$gutterdbl;
+        width: 25%;
+        // -$gutterdbl;
         
     }
 
-    .content {
-        margin: 1rem 0 0 0;
-    }
+    // .content {
+    //     margin: 1rem 0 0 0;
+    // }
 }

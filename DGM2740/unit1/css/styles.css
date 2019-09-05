@@ -98,26 +98,25 @@ input, select {
 
   body {
     font-family: "Lato", sans-serif;
-    font-weight: 300;
+    font-weight: 700;
     font-size: 16px; }
 
   header {
-    background-color: #C4E5F2;
-    color: #1C228C;
+    background-color: #9DA395;
+    color: #0D0D0D;
     padding: 1rem 2%; }
     header h1 {
       font-size: 2rem;
-      font-weight: 300; }
+      font-weight: 700; }
     header h2 {
       font-size: .81rem;
-      font-weight: 300; }
+      font-weight: 700; }
 
   nav {
-    background-color: #1C228C; }
+    background-color: #485746; }
     nav ul li {
       float: left;
-      width: 50%;
-      border-right: solid 1px white; }
+      width: 25%; }
     nav ul li:last-child {
       border-right: none; }
     nav ul li a {
@@ -125,21 +124,21 @@ input, select {
       text-align: center;
       font-weight: 700;
       padding: .5rem 0;
-      color: #C4E5F2;
+      color: #9DA395;
       text-decoration: none;
       transition: background 0.75s ease, color  0.75s ease; }
     nav ul li.active a {
-      background-color: #141862; }
+      background-color: #313b2f; }
     nav ul li a:hover {
-      color: #1C228C;
-      background-color: #C4E5F2; }
+      color: #485746;
+      background-color: #9DA395; }
 
   main h1 {
     font-size: 2rem;
     font-family: "Lato", sans-serif;
-    font-weight: 300; }
+    font-weight: 700; }
   main img {
-    max-width: 200px; }
+    max-width: 100%; }
   main #desktop {
     display: none; }
   main #tablet {
@@ -147,10 +146,10 @@ input, select {
 
   footer {
     width: 100%;
-    background-color: #C4E5F2; }
+    background-color: #9DA395; }
     footer p {
       text-align: center;
-      color: #1C228C;
+      color: #485746;
       padding: .75rem;
       font-size: .9rem; }
 
@@ -170,26 +169,25 @@ input, select {
 
   body {
     font-family: "Lato", sans-serif;
-    font-weight: 300;
+    font-weight: 700;
     font-size: 16px; }
 
   header {
-    background-color: #C4E5F2;
-    color: #1C228C;
+    background-color: #9DA395;
+    color: #0D0D0D;
     padding: 1rem 2%; }
     header h1 {
       font-size: 2rem;
-      font-weight: 300; }
+      font-weight: 700; }
     header h2 {
       font-size: .81rem;
-      font-weight: 300; }
+      font-weight: 700; }
 
   nav {
-    background-color: #1C228C; }
+    background-color: #485746; }
     nav ul li {
       float: left;
-      width: 50%;
-      border-right: solid 1px white; }
+      width: 25%; }
     nav ul li:last-child {
       border-right: none; }
     nav ul li a {
@@ -197,21 +195,21 @@ input, select {
       text-align: center;
       font-weight: 700;
       padding: .5rem 0;
-      color: #C4E5F2;
+      color: #9DA395;
       text-decoration: none;
       transition: background 0.75s ease, color  0.75s ease; }
     nav ul li.active a {
-      background-color: #141862; }
+      background-color: #313b2f; }
     nav ul li a:hover {
-      color: #1C228C;
-      background-color: #C4E5F2; }
+      color: #485746;
+      background-color: #9DA395; }
 
   main h1 {
     font-size: 2rem;
     font-family: "Lato", sans-serif;
-    font-weight: 300; }
+    font-weight: 700; }
   main img {
-    max-width: 200px; }
+    max-width: 100%; }
   main #desktop {
     display: none; }
   main #phone {
@@ -219,10 +217,10 @@ input, select {
 
   footer {
     width: 100%;
-    background-color: #C4E5F2; }
+    background-color: #9DA395; }
     footer p {
       text-align: center;
-      color: #1C228C;
+      color: #485746;
       padding: .75rem;
       font-size: .9rem; }
 
@@ -242,28 +240,27 @@ input, select {
 
   body {
     font-family: "Lato", sans-serif;
-    font-weight: 300;
+    font-weight: 700;
     font-size: 16px;
     margin: 0 auto;
     max-width: 75rem; }
 
   header {
-    background-color: #C4E5F2;
-    color: #1C228C;
+    background-color: #9DA395;
+    color: #0D0D0D;
     padding: 1rem 2%; }
     header h1 {
       font-size: 2rem;
-      font-weight: 300; }
+      font-weight: 700; }
     header h2 {
       font-size: .81rem;
-      font-weight: 300; }
+      font-weight: 700; }
 
   nav {
-    background-color: #1C228C; }
+    background-color: #485746; }
     nav ul li {
       float: left;
-      width: 50%;
-      border-right: solid 1px white; }
+      width: 25%; }
     nav ul li:last-child {
       border-right: none; }
     nav ul li a {
@@ -271,21 +268,21 @@ input, select {
       text-align: center;
       font-weight: 700;
       padding: .5rem 0;
-      color: #C4E5F2;
+      color: #9DA395;
       text-decoration: none;
       transition: background 0.75s ease, color  0.75s ease; }
     nav ul li.active a {
-      background-color: #141862; }
+      background-color: #313b2f; }
     nav ul li a:hover {
-      color: #1C228C;
-      background-color: #C4E5F2; }
+      color: #485746;
+      background-color: #9DA395; }
 
   main h1 {
     font-size: 2rem;
     font-family: "Lato", sans-serif;
-    font-weight: 300; }
+    font-weight: 700; }
   main img {
-    max-width: 400px; }
+    max-width: 100%; }
   main #phone {
     display: none; }
   main #tablet {
@@ -293,10 +290,10 @@ input, select {
 
   footer {
     width: 100%;
-    background-color: #C4E5F2; }
+    background-color: #9DA395; }
     footer p {
       text-align: center;
-      color: #1C228C;
+      color: #485746;
       padding: .75rem;
       font-size: .9rem; }
 
