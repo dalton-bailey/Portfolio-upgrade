@@ -175,7 +175,7 @@ html,body {
   }
 
   #hero-header div {
-    margin-top: 8rem;
+    margin-top: 6rem;
   }
 
   .name {
@@ -191,5 +191,9 @@ html,body {
   @media only screen and (max-width: 400px) {
     .profile-pic {
       width: 15rem;
+    }
+
+    #hero-header div {
+      margin-top: 4rem;
     }
   }
