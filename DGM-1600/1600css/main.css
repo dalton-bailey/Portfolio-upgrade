@@ -24,9 +24,12 @@ html,body {
     top: .5rem;
   }
 
+  nav ul.closed {
+    display: block;
+  }
+
   #navbar {
     position: fixed;
-    /* background-color: white; */
   }
 
   nav ul {
@@ -48,17 +51,19 @@ html,body {
 
   nav ul li a:hover {
     color: #DE7732;
-}
+} 
 
 .name {
   color: black;
   font-size: 3.5rem;
+  letter-spacing: 3px;
 }
 
 .title {
   color: black;
   font-size: 2.3rem;
   padding-top: .5rem;
+  letter-spacing: 2px;
 }
 
   .profile-pic {
@@ -142,9 +147,44 @@ html,body {
     color: black;
   }
 
-  /* @media only screen and (max-width: 1100px) {
-    .profile-pic {
-      width: 300px;
-      margin-top: -150px;
+  @media only screen and (max-width: 800px) {
+    #welcome-section {
+      display: flex;
+      /* align-items: center; */
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 5rem;
+      width: 75%;
+
     }
-  } */
+
+    #welcome-section div {
+      padding-top: 3rem;
+      padding-left: 0rem;
+      text-align: center;
+    }
+  }
+
+  @media only screen and (max-width: 580px) {
+    nav ul li a {
+      font-size: .9rem;
+  }
+
+  nav {
+    top: -1rem;
+  }
+
+  #hero-header div {
+    margin-top: 8rem;
+  }
+
+  .name {
+    font-size: 2.5rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+
+  }
