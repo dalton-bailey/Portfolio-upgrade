@@ -192,13 +192,6 @@ footer {
   clear: both; }
 
 @media only screen and (min-width: 560px) {
-  nav ul {
-    margin-left: 2%; }
-  nav ul li {
-    width: auto; }
-  nav ul li a {
-    padding: .5rem 1rem; }
-
   main figure.photo {
     width: 46%;
     margin: 0.5rem 2%; }
@@ -216,6 +209,13 @@ footer {
   div#wrapper {
     max-width: 75rem;
     margin: auto; }
+
+  nav ul {
+    margin-left: 2%; }
+  nav ul li {
+    width: auto; }
+  nav ul li a {
+    padding: .5rem 1rem; }
 
   main figure.photo {
     width: 21%;

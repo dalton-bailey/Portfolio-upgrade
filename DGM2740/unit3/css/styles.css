@@ -111,12 +111,10 @@ header {
     font-weight: 600; }
 
 nav {
-  background-color: #F2B4AE;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
+  background-color: #d7dae4; }
   nav ul li {
     float: left;
-    width: 25%;
-    border-right: 1px solid rgba(0, 0, 0, 0.3); }
+    width: 25%; }
   nav ul li:last-child {
     border-right: none; }
   nav ul li a {
@@ -128,9 +126,9 @@ nav {
     text-decoration: none;
     transition: background 0.75s ease, color  0.75s ease; }
   nav ul li.active a {
-    background-color: #eb8b82; }
+    background-color: #b9becf; }
   nav ul li a:hover {
-    color: #F2B4AE;
+    color: #d7dae4;
     background-color: #3B5972; }
 
 main figure.banner {
@@ -152,20 +150,21 @@ main p {
   line-height: 130%;
   color: #3B5972; }
 main figure.photo {
-  width: 46%;
-  margin: 0.5rem 2%;
-  float: left; }
+  width: 12rem;
+  margin: 0.5rem 2%; }
 main figure.photo img {
   width: 100%; }
 main figure.photo figcaption {
   text-align: center;
   color: #3B5972; }
-main div.blog article {
-  float: left; }
+main .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
 
 footer {
   width: 100%;
-  background-color: #F2B4AE; }
+  background-color: #d7dae4; }
   footer p {
     text-align: center;
     color: #3B5972;
@@ -181,30 +180,8 @@ footer {
   nav ul li {
     width: auto; }
   nav ul li a {
-    padding: .5rem 1rem; }
-
-  main figure.photo {
-    width: 29.33%;
-    margin: 0.5rem 2%;
-    float: left; }
-  main div.blog article {
-    float: left;
-    width: 29.33%; }
-  main div.blog article:nth-child(2n+1) {
-    clear: left; } }
+    padding: .5rem 1rem; } }
 @media only screen and (min-width: 1140px) {
   div#wrapper {
     max-width: 71.25rem;
-    margin: auto; }
-
-  main figure.photo {
-    width: 21%;
-    margin: 0.5rem 2%;
-    float: left; }
-  main div.blog article {
-    float: left;
-    width: 29.33%; }
-  main div.blog article:nth-child(2n+1) {
-    clear: none; }
-  main div.blog article:nth-child(3n+1) {
-    clear: left; } }
+    margin: auto; } }

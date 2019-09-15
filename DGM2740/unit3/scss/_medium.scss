@@ -13,20 +13,20 @@ nav {
         padding: .5rem 1rem;
     }
 }
-//Overall styling for the MAIN of the document.
-main {
-    figure.photo {
-        width: 33.33%-$gutterdbl;
-        margin: .5rem $gutter;
-        float: left;
-    }
+// //Overall styling for the MAIN of the document.
+// main {
+//     figure.photo {
+//         width: 33.33%-$gutterdbl;
+//         margin: .5rem $gutter;
+//         float: left;
+//     }
 
-    div.blog article {
-        float: left;
-        width: 33.33%-$gutterdbl;
-    }
+//     div.blog article {
+//         float: left;
+//         width: 33.33%-$gutterdbl;
+//     }
 
-    div.blog article:nth-child(2n+1) {
-        clear:left;
-    }
-}
+//     div.blog article:nth-child(2n+1) {
+//         clear:left;
+//     }
+// }

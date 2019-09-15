@@ -4,6 +4,20 @@ div#wrapper {
     margin: auto;
 }
 
+//Overall styling for the NAVIGATION of the document.
+nav {
+    ul {
+        margin-left: $gutter;
+    }
+
+    ul li {
+        width: auto;
+    }
+
+    ul li a {
+        padding: .5rem 1rem;
+    }
+}
 
 //Overall styling for the MAIN of the document.
 main {

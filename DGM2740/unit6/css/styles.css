@@ -104,17 +104,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  background-color: lightyellow;
+  background-color: #d1e9df;
   color: black;
   padding: 1rem 2%; }
-  header .intro {
-    display: flex;
-    align-items: flex-end; }
   header figure img {
     width: 200px;
     border-radius: 25px; }
-  header div {
-    margin-left: 10px; }
   header h1 {
     font-size: 2rem;
     font-weight: 300; }
@@ -129,17 +124,15 @@ header {
   header ul.social li a {
     font-size: 3rem;
     padding-left: .5rem;
-    color: orange; }
+    color: black; }
   header ul.social li a:hover {
-    color: white; }
+    color: #7aa2a0; }
 
 nav {
-  background-color: orange;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
+  background-color: #7aa2a0; }
   nav ul li {
     float: left;
-    width: 25%;
-    border-right: 1px solid rgba(0, 0, 0, 0.3); }
+    width: 25%; }
   nav ul li:last-child {
     border-right: none; }
   nav ul li a {
@@ -147,14 +140,14 @@ nav {
     text-align: center;
     font-weight: 700;
     padding: .5rem 0;
-    color: lightyellow;
+    color: #d1e9df;
     text-decoration: none;
     transition: background 0.75s ease, color  0.75s ease; }
   nav ul li.active a {
-    background-color: #cc8400; }
+    background-color: #608987; }
   nav ul li a:hover {
-    color: orange;
-    background-color: lightyellow; }
+    color: #7aa2a0;
+    background-color: #d1e9df; }
 
 main article {
   margin: 0.5rem 2%; }
@@ -181,10 +174,10 @@ main .members {
 
 footer {
   width: 100%;
-  background-color: lightyellow; }
+  background-color: #d1e9df; }
   footer p {
     text-align: center;
-    color: orange;
+    color: #7aa2a0;
     padding: .75rem;
     font-size: .9rem; }
 
@@ -202,12 +195,9 @@ footer {
     margin: auto; }
 
   nav ul {
-    margin-left: 2%;
-    border-left: 1px solid rgba(0, 0, 0, 0.3); }
+    margin-left: 2%; }
   nav ul li {
     width: auto; }
-  nav ul li:last-child {
-    border-right: 1px solid rgba(0, 0, 0, 0.3); }
   nav ul li a {
     padding: .5rem 1rem; }
 

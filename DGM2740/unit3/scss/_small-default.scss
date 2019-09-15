@@ -26,12 +26,12 @@ header {
 //Overall styling for the NAVIGATION of the document.
     nav {
         background-color: $secondaryColor;
-        border-bottom: 1px solid rgba(0,0,0,0.3);
+        // border-bottom: 1px solid rgba(0,0,0,0.3);
 
         ul li {
             float: left;
             width: 25%;
-            border-right: 1px solid rgba(0,0,0,0.3);
+            // border-right: 1px solid rgba(0,0,0,0.3);
         }
 
         ul li:last-child {
@@ -91,9 +91,8 @@ main {
     }
 
     figure.photo {
-        width: 50%-$gutterdbl;
+        width: 12rem;
         margin: .5rem $gutter;
-        float: left;
     }
     figure.photo img {
         width: 100%;
@@ -104,10 +103,10 @@ main {
         color: $fontColor;
     }
 
-    div.blog article {
-        float: left;
-        // margin: .5rem $gutter;
-        // width: 25%-$gutterdbl;
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
