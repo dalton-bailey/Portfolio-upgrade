@@ -7,7 +7,7 @@ header.appendChild(company)
 
 const slogan = document.createElement('h2')
 slogan.className = 'slogan'
-slogan.textContent = 'Blah blah blah blah blah blah'
+slogan.textContent = '"This IZ Chief Inspector Clouseau Speaking on the pheun"'
 header.appendChild(slogan)
 
 function windowProp() {

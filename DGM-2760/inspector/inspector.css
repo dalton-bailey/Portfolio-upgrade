@@ -10,7 +10,7 @@ body {
 
 .top {
     position: absolute;
-    bottom: 8px;
+    top: 8px;
     left: 16px;
 }
 
@@ -25,28 +25,28 @@ header img {
 }
 
 .companyName {
-    font-size: 2.5rem;
-}
-
-.slogan {
     font-size: 2rem;
 }
 
+.slogan {
+    font-size: 1.5rem;
+}
+
 main h1 {
-    color: #234B4B;
+    color: #0554F2;
 }
 
 main h2 {
-    color: #769784;
+    color: #076DF2;
 }
 
 ul {
-    color: #234B4B;
+    color: black;
 }
 
 footer {
     text-align: center;
-    background-color: #769784;
+    background-color: #076DF2;
     color: white;
 }
 
