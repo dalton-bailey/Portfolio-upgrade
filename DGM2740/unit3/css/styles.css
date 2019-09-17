@@ -151,7 +151,8 @@ main p {
   color: #3B5972; }
 main figure.photo {
   width: 12rem;
-  margin: 0.5rem 2%; }
+  margin: 0.5rem 2%;
+  flex-basis: 400px; }
 main figure.photo img {
   width: 100%; }
 main figure.photo figcaption {
@@ -180,8 +181,14 @@ footer {
   nav ul li {
     width: auto; }
   nav ul li a {
-    padding: .5rem 1rem; } }
+    padding: .5rem 1rem; }
+
+  main figure.photo {
+    flex-basis: 300px; } }
 @media only screen and (min-width: 1140px) {
   div#wrapper {
     max-width: 71.25rem;
-    margin: auto; } }
+    margin: auto; }
+
+  main figure.photo {
+    flex-basis: 200px; } }

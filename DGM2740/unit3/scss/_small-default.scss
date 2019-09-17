@@ -93,6 +93,7 @@ main {
     figure.photo {
         width: 12rem;
         margin: .5rem $gutter;
+        flex-basis: 400px;
     }
     figure.photo img {
         width: 100%;

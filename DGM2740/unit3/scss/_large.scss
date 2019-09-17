@@ -4,25 +4,10 @@ div#wrapper {
     margin: auto;
 }
 
-// //Overall styling for the MAIN of the document.
-// main {
-//     figure.photo {
-//         width: 25%-$gutterdbl;
-//         margin: .5rem $gutter;
-//         float: left;
-//     }
+//Overall styling for the MAIN of the document.
+main {
+    figure.photo {
+        flex-basis: 200px;
+    }
 
-//     div.blog article {
-//         float:left;
-//         width: 33.33%-$gutterdbl;
-//     }
-
-//     div.blog article:nth-child(2n+1) {
-//         clear:none;
-//     }
-
-//     div.blog article:nth-child(3n+1) {
-//         clear:left;
-//     }
-
-// }
+}

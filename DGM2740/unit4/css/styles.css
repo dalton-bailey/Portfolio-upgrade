@@ -99,26 +99,32 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: 16px; }
-  body figure.banner {
-    width: 100%; }
-  body figure.banner img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%; }
-  body figure.banner img:hover {
-    opacity: .8; }
 
 header {
-  color: #EFF2E2;
   padding: 0rem 1rem 0rem 1rem;
-  margin-top: -4.5rem; }
-  header h1 {
-    font-size: 2.5rem;
-    font-weight: 700; }
-  header h2 {
-    font-size: 2rem;
-    font-weight: 700; }
+  height: 10rem;
+  background-image: url("../images/tress-small-02.jpg");
+  background-repeat: no-repeat; }
+
+header:hover {
+  opacity: .8; }
+
+.title {
+  margin-top: -4.5rem;
+  padding-left: 2%; }
+
+div h1, h2 {
+  color: #EFF2E2;
+  max-width: 60rem;
+  margin: 0 auto; }
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700; }
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700; }
 
 nav {
   background-color: darkseagreen;
@@ -183,6 +189,11 @@ footer {
   nav ul li a {
     padding: .5rem 1rem; }
 
+  header {
+    height: 10rem;
+    background-image: url("../images/trees-medium-01.jpg");
+    background-repeat: no-repeat; }
+
   main figure.photo {
     width: 46%;
     margin: 0.5rem 2%;
@@ -204,9 +215,9 @@ footer {
     padding: .5rem 1rem; }
 
   header {
-    max-width: 60rem;
-    margin: auto;
-    margin-top: -4.5rem; }
+    height: 15rem;
+    background-image: url("../images/trees-large-03.jpg");
+    background-repeat: no-repeat; }
 
   main {
     max-width: 60rem;

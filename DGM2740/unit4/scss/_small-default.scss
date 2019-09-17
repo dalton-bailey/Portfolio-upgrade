@@ -8,37 +8,54 @@ body {
     font-size: 16px;
 
     
-    figure.banner {
-        width: 100%;
-    }
+    // figure.banner {
+    //     width: 100%;
+    // }
 
-    figure.banner img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-    }
+    // figure.banner img {
+    //     display: block;
+    //     margin-left: auto;
+    //     margin-right: auto;
+    //     width: 100%;
+    // }
 
-    figure.banner img:hover {
-        opacity: .8;
-    }
+    // figure.banner img:hover {
+    //     opacity: .8;
+    // }
 }
 
 //Overall styling for the HEADER of the document.
 header {
-    color: $fontColor;
     padding: 0rem 1rem 0rem 1rem;
-    margin-top: -4.5rem;
+    height: 10rem;
+    // margin-top: -4.5rem;
     // position: absolute;
+    background-image: url("../images/tress-small-02.jpg");
+    background-repeat: no-repeat;
+}
 
-    h1 {
-        font-size: 2.5rem;
-        font-weight: $normalWeight;   
-    }
-    h2 {
-        font-size: 2rem;
-        font-weight: $normalWeight;
-    }
+header:hover {
+    opacity: .8;
+}
+
+.title {
+    margin-top: -4.5rem;
+    padding-left: $gutter;
+}
+
+div h1, h2 {
+    color: $fontColor;
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: $normalWeight;  
+}
+h2 {
+    font-size: 2rem;
+    font-weight: $normalWeight;
 }
 
 //Overall styling for the NAVIGATION of the document.
