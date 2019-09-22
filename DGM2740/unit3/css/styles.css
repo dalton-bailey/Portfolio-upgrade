@@ -152,7 +152,7 @@ main p {
 main figure.photo {
   width: 12rem;
   margin: 0.5rem 2%;
-  flex-basis: 400px; }
+  flex-basis: 100%; }
 main figure.photo img {
   width: 100%; }
 main figure.photo figcaption {
@@ -184,11 +184,11 @@ footer {
     padding: .5rem 1rem; }
 
   main figure.photo {
-    flex-basis: 300px; } }
+    flex-basis: 40%; } }
 @media only screen and (min-width: 1140px) {
   div#wrapper {
     max-width: 71.25rem;
     margin: auto; }
 
   main figure.photo {
-    flex-basis: 200px; } }
+    flex-basis: 20%; } }
