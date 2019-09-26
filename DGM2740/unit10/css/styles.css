@@ -100,6 +100,10 @@ body {
   font-weight: 300;
   font-size: 16px; }
 
+div#wrapper {
+  max-width: 64rem;
+  margin: 0 auto; }
+
 header {
   display: flex;
   align-items: center;
@@ -131,10 +135,9 @@ header {
 
 nav {
   background-color: #445ba9;
-  width: 100%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
   nav button {
-    background-image: url(/Unit8/photos/menuIconWhite.png);
+    background-image: url(/DGM2740/unit10/photos/menuIconWhite.png);
     background-repeat: no-repeat;
     width: 72px;
     height: 32px;
@@ -232,3 +235,5 @@ footer {
   content: "";
   display: table;
   clear: both; }
+
+/*# sourceMappingURL=styles.css.map */

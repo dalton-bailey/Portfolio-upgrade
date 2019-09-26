@@ -8,6 +8,12 @@ body {
     font-size: 16px;
 }
 
+//Overall styling for the BODY of the document.
+div#wrapper {
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
 //Overall styling for the HEADER of the document.
 header {
     display: flex;
@@ -48,11 +54,11 @@ header {
 //Overall styling for the NAVIGATION of the document.
 nav {
     background-color: $secondaryColor;
-    width: 100%;
+    // width: 100%;
     border-bottom: 1px solid rgba(0,0,0,0.3);
 
     button {
-        background-image: url(/Unit8/photos/menuIconWhite.png);
+        background-image: url(/DGM2740/unit10/photos/menuIconWhite.png);
         background-repeat: no-repeat;
         width: 72px;
         height: 32px;
