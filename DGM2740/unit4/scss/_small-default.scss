@@ -32,6 +32,7 @@ header {
     // position: absolute;
     background-image: url("../images/tress-small-02.jpg");
     background-repeat: no-repeat;
+    width: 100%;
 }
 
 header:hover {
@@ -39,14 +40,14 @@ header:hover {
 }
 
 .title {
-    margin-top: -4.5rem;
-    padding-left: $gutter;
+    display: flex;
+    flex-direction: column;
 }
 
-div h1, h2 {
-    color: $fontColor;
+div {
+    color: white;
     max-width: 60rem;
-    margin: 0 auto;
+    // margin: 0 auto;
 }
 
 h1 {
