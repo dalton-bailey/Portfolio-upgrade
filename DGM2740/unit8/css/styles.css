@@ -159,7 +159,7 @@ nav {
     background-color: #000058; }
 
 main {
-  max-width: 60rem;
+  max-width: 80rem;
   min-height: 20rem;
   padding: 1rem 2%;
   display: grid;
@@ -177,13 +177,9 @@ main {
   main div.teaser {
     position: relative; }
   main div.teaser span {
-    position: absolute;
-    display: block;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.3);
     width: 100%;
     padding: .3rem 2%;
-    color: white;
+    color: black;
     font-size: 1.5rem; }
   main div img {
     display: block;
@@ -259,10 +255,6 @@ footer {
   footer .footer {
     column-count: 2; } }
 @media only screen and (min-width: 1140px) {
-  div#wrapper {
-    max-width: 80rem;
-    margin: auto; }
-
   nav ul {
     margin-left: 2%; }
   nav ul li {
@@ -286,3 +278,5 @@ footer {
   footer .footer {
     display: flex;
     justify-content: space-around; } }
+
+/*# sourceMappingURL=styles.css.map */

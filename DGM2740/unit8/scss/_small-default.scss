@@ -95,7 +95,7 @@ header {
 
 //Overall styling for the MAIN of the document.
 main {
-   max-width: 60rem;
+   max-width: 80rem;
    min-height: 20rem;
    padding: 1rem 2%;
    display: grid;
@@ -120,13 +120,13 @@ main {
     }
 
     div.teaser span {
-        position: absolute;
-        display: block;
-        bottom: 0;
-        background-color: rgba(0,0,0,0.3);
+        // position: absolute;
+        // display: block;
+        // bottom: 0;
+        // background-color: rgba(0,0,0,0.3);
         width: 100%;
         padding: .3rem 2%;
-        color: white;
+        color: black;
         font-size: 1.5rem;
     }
 
