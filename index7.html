@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta charset="utf-8">
     <title>Law Firm | Attorneys</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="DGM2740/Unit7/css/styles.css" rel="stylesheet">
@@ -15,14 +15,15 @@
     <div id="wrapper">
         <!-- PAGE HEADER GOES HERE -->
         <header>
-            <div>
-                <h1>Martin, Tuft, and Brainly</h1>
-                <h2>Sound Council. Smart Business.</h2>
+            <div class="heading">
+                <div>
+                    <h1>Martin, Tuft, and Brainly</h1>
+                    <h2>Sound Council. Smart Business.</h2>
+                </div>
+                <div>
+                    <input type="text" placeholder="Search..">
+                </div>
             </div>
-            <div>
-                <input type="text" placeholder="Search..">
-            </div>
-
         </header>
 
         <!-- PAGE NAVIGATION GOES HERE -->
@@ -30,22 +31,22 @@
             <button id="hamburgerBtn"></button>
             <ul id="primaryNav" class="closed">
                 <li><a href="index7.html">Home</a></li>
-                <li class="active"><a href="second.html">Attorneys</a></li>
-                <li><a href="third.html">Practices</a></li>
-                <li><a href="fourth.html">About Us</a></li>
-                <li><a href="fourth.html">News</a></li>
-                <li><a href="fourth.html">Links</a></li>
+                <li class="active"><a href="">Attorneys</a></li>
+                <li><a href="">Practices</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">Links</a></li>
             </ul>
         </nav>
 
         <!-- PAGE CONTENT GOES HERE -->
         <main class="clearfix">
             <div class="row attorneys">
-                    <div class="column small-0 medium-0 large-2 attorney"></div>
+                <div class="column small-0 medium-0 large-2 attorney"></div>
                 <div class="column small-6 medium-3 large-2 attorney">
                     <h2>Perry Mason</h2>
                     <figure class="photo">
-                        <img src="DGM2740/images/Perry-Mason.jpg">
+                        <img src="DGM2740/unit7/photos/Perry-Mason.jpg">
                         <figcaption></figcaption>
                     </figure>
                     <button type="button" class="learn">LEARN MORE</button>
@@ -53,7 +54,7 @@
                 <div class="column small-6 medium-3 large-2 attorney">
                     <h2>Malcom Turnbull</h2>
                     <figure class="photo">
-                        <img src="DGM2740/images/Malcom-Turnbull.jpg">
+                        <img src="DGM2740/unit7/photos/Malcom-Turnbull.jpg">
                         <figcaption></figcaption>
                     </figure>
                     <button type="button" class="learn">LEARN MORE</button>
@@ -61,7 +62,7 @@
                 <div class="column small-6 medium-3 large-2 attorney">
                     <h2>Alan Shore</h2>
                     <figure class="photo">
-                        <img src="DGM2740/images/Alan-Shore.jpg">
+                        <img src="DGM2740/unit7/photos/Alan-Shore.jpg">
                         <figcaption></figcaption>
                     </figure>
                     <button type="button" class="learn">LEARN MORE</button>
@@ -69,7 +70,7 @@
                 <div class="column small-6 medium-3 large-2 attorney">
                     <h2>Alicia Florrick</h2>
                     <figure class="photo">
-                        <img src="DGM2740/images/Alicia-Florrick.png">
+                        <img src="DGM2740/unit7/photos/Alicia-Florrick.png">
                         <figcaption></figcaption>
                     </figure>
                     <button type="button" class="learn">LEARN MORE</button>
@@ -81,52 +82,62 @@
                 <button type="button" class="column small-12 medium-4 large-3 button">CLIENTS</button>
                 <button type="button" class="column small-12 medium-4 large-4 button">YOUR CASE REVIEW</button>
                 <button type="button" class="column small-12 medium-4 large-3 button">FAMOUS CASES</button>
-               
-                
-            </div>
 
-            <div class="row blog">
-                <article class="column small-12 medium-6 large-3 blogpost">
-                    <figure class="photo">
-                        <img src="DGM2740/Unit7/photos/blogpost1.jpg">
-                    </figure>
-                    <h3>Blog Post #1</h3>
-                    <p>Elementum, sagittis adipiscing, nec et? Ridiculus, porta placerat ultrices odio diam in, urna
-                        phasellus in ac egestas egestas nunc, pellentesque, non porta, nisi turpis. Ultricies integer
-                        sociis etiam ultrices dis facilisis nascetur. Pellentesque cursus integer mauris augue enim</p>
-                    <button type="button" class="read">READ MORE</button>
-                </article>
-                <article class="column small-12 medium-6 large-3 blogpost">
-                    <figure class="photo">
-                        <img src="DGM2740/Unit7/photos/blogpost2.jpg">
-                    </figure>
-                    <h3>Blog Post #2</h3>
-                    <p>Elementum, sagittis adipiscing, nec et? Ridiculus, porta placerat ultrices odio diam in, urna
-                        phasellus in ac egestas egestas nunc, pellentesque, non porta, nisi turpis. Ultricies integer
-                        sociis etiam ultrices dis facilisis nascetur. Pellentesque cursus integer mauris augue enim</p>
-                    <button type="button" class="read">READ MORE</button>
-                </article>
-                <article class="column small-12 medium-6 large-3 blogpost">
-                    <figure class="photo">
-                        <img src="DGM2740/Unit7/photos/blogpost3.jpg">
-                    </figure>
-                    <h3>Blog Post #3</h3>
-                    <p>Elementum, sagittis adipiscing, nec et? Ridiculus, porta placerat ultrices odio diam in, urna
-                        phasellus in ac egestas egestas nunc, pellentesque, non porta, nisi turpis. Ultricies integer
-                        sociis etiam ultrices dis facilisis nascetur. Pellentesque cursus integer mauris augue enim</p>
-                    <button type="button" class="read">READ MORE</button>
-                </article>
-                <article class="column small-12 medium-6 large-3 blogpost">
-                    <figure class="photo">
-                        <img src="DGM2740/Unit7/photos/blogpost4.jpg">
-                    </figure>
-                    <h3>Blog Post #4</h3>
-                    <p>Elementum, sagittis adipiscing, nec et? Ridiculus, porta placerat ultrices odio diam in, urna
-                        phasellus in ac egestas egestas nunc, pellentesque, non porta, nisi turpis. Ultricies integer
-                        sociis etiam ultrices dis facilisis nascetur. Pellentesque cursus integer mauris augue enim</p>
-                    <button type="button" class="read">READ MORE</button>
-                </article>
+
             </div>
+            <section>
+                <div class="row blog">
+                    <article class="column small-12 medium-6 large-3 blogpost">
+                        <figure class="photo">
+                            <img src="DGM2740/Unit7/photos/blogpost1.jpg">
+                        </figure>
+                        <h3>Blog Post #1</h3>
+                        <p>Elementum, sagittis adipiscing, nec et? Ridiculus, porta placerat ultrices odio diam in, urna
+                            phasellus in ac egestas egestas nunc, pellentesque, non porta, nisi turpis. Ultricies
+                            integer
+                            sociis etiam ultrices dis facilisis nascetur. Pellentesque cursus integer mauris augue enim
+                        </p>
+                        <button type="button" class="read">READ MORE</button>
+                    </article>
+                    <article class="column small-12 medium-6 large-3 blogpost">
+                        <figure class="photo">
+                            <img src="DGM2740/Unit7/photos/blogpost2.jpg">
+                        </figure>
+                        <h3>Blog Post #2</h3>
+                        <p>Elementum, sagittis adipiscing, nec et? Ridiculus, porta placerat ultrices odio diam in, urna
+                            phasellus in ac egestas egestas nunc, pellentesque, non porta, nisi turpis. Ultricies
+                            integer
+                            sociis etiam ultrices dis facilisis nascetur. Pellentesque cursus integer mauris augue enim
+                        </p>
+                        <button type="button" class="read">READ MORE</button>
+                    </article>
+                    <article class="column small-12 medium-6 large-3 blogpost">
+                        <figure class="photo">
+                            <img src="DGM2740/Unit7/photos/blogpost3.jpg">
+                        </figure>
+                        <h3>Blog Post #3</h3>
+                        <p>Elementum, sagittis adipiscing, nec et? Ridiculus, porta placerat ultrices odio diam in, urna
+                            phasellus in ac egestas egestas nunc, pellentesque, non porta, nisi turpis. Ultricies
+                            integer
+                            sociis etiam ultrices dis facilisis nascetur. Pellentesque cursus integer mauris augue enim
+                        </p>
+                        <button type="button" class="read">READ MORE</button>
+                    </article>
+                    <article class="column small-12 medium-6 large-3 blogpost">
+                        <figure class="photo">
+                            <img src="DGM2740/Unit7/photos/blogpost4.jpg">
+                        </figure>
+                        <h3>Blog Post #4</h3>
+                        <p>Elementum, sagittis adipiscing, nec et? Ridiculus, porta placerat ultrices odio diam in, urna
+                            phasellus in ac egestas egestas nunc, pellentesque, non porta, nisi turpis. Ultricies
+                            integer
+                            sociis etiam ultrices dis facilisis nascetur. Pellentesque cursus integer mauris augue enim
+                        </p>
+                        <button type="button" class="read">READ MORE</button>
+                    </article>
+                </div>
+
+            </section>
 
             <!-- end of blog -->
 
