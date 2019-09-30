@@ -6,32 +6,10 @@ html,body {
   margin: 0;
   padding: 0;
 }
-#hero-header {
-  position: relative;
+
+.banner {
+  width: 100%;
 }
-
-  .banner {
-    width: 100%;
-  }
-
-  #hero-header div {
-    width: 100%;
-    position: absolute;
-    top: 10rem;
-  }
-
-  /* nav {
-    position: absolute;
-    top: .5rem;
-  } */
-
-  /* nav ul.closed {
-    display: block;
-  } */
-
-  /* #navbar {
-    position: fixed;
-  } */
 
   nav ul {
     text-align: center;
@@ -54,55 +32,8 @@ html,body {
     color: #DE7732;
 } 
 
-.name {
-  color: black;
-  font-size: 3.5rem;
-  letter-spacing: 3px;
-}
-
-.title {
-  color: black;
-  font-size: 2.1rem;
-  padding-top: .5rem;
-  letter-spacing: 2px;
-}
-
-  .profile-pic {
-    width: 25rem;
-    border-radius: 50%;
-  }
-
-  #welcome-section {
-    display: flex;
-    align-items: center;
-    /* flex-wrap: wrap; */
-    margin-top: 5rem;
-    width: 75%;
-    margin: 0 auto;
-    padding-top: 5rem;
-  }
-
-  #welcome-section div {
-    padding-left: 5rem;
-    text-align: left;
-  }
-
-  .para-one {
-    font-size: 1.5rem;
-  }
-
-  .para-two {
-    padding-top: 2rem;
-    font-size: 1.5rem;
-  }
-
-.my-work {
-  color: black;
-  font-size: 2.5em;
-  letter-spacing: 3px;
-  margin-bottom: 1.5rem;
-  margin-top: 7rem;
-
+.work-header {
+  font-size: 3rem;
 }
 
 #projects {
@@ -133,7 +64,7 @@ html,body {
 
 .contact-details {
   display: inline-block;
-  margin: 0 35px 45px 35px;
+  margin:  3rem;
   list-style-type: none;
   border-radius: 100%;
   width: 100px;
@@ -146,13 +77,6 @@ html,body {
 
 .contact-details:hover {
   background: #DEE2E1;
-}
-
-.header {
-  color: black;
-  margin: 4rem;
-  letter-spacing: 3px;
-  font-size: 2.5rem;
 }
 
   /* @media only screen and (max-width: 500px) {
@@ -169,7 +93,7 @@ html,body {
 
 
   footer {
-    padding: 20px;
+    /* padding: 20px; */
     line-height: 40px;
     color: black;
   }

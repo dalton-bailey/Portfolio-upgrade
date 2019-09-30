@@ -101,75 +101,33 @@ body {
   font-size: 16px; }
 
 header {
-  background-color: lightyellow;
+  background-color: lightblue;
   color: black;
   padding: 1rem 2%; }
   header h1 {
-    font-size: 2rem;
-    font-weight: 300; }
-  header h2 {
-    font-size: 1.5rem;
-    font-weight: 300; }
+    font-size: 2rem; }
 
-nav {
-  background-color: lightyellow;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
-  nav ul li {
-    float: left;
-    width: 25%;
-    border-right: 1px solid rgba(0, 0, 0, 0.3); }
-  nav ul li:last-child {
-    border-right: none; }
-  nav ul li a {
-    display: block;
-    text-align: center;
-    font-weight: 700;
-    padding: .5rem 0;
-    color: lightyellow;
-    text-decoration: none;
-    transition: background 0.75s ease, color  0.75s ease; }
-  nav ul li.active a {
-    background-color: #ffffad; }
-  nav ul li a:hover {
-    color: lightyellow;
-    background-color: lightyellow; }
-
-main figure.banner {
-  width: 100%; }
-main figure.banner img {
-  width: 100%; }
-main h1 {
-  font-size: 2rem;
-  margin: 1rem 0 0 2%;
-  color: lightyellow; }
-main h2 {
-  font-size: 1.5rem;
-  margin: 0.75rem 0 0 2%;
-  color: #666666; }
-main h3 {
-  font-size: 1.2rem;
-  color: #4d4d4d; }
-main p {
-  line-height: 130%;
-  color: black; }
-main figure.photo {
-  width: 96%;
-  margin: 0.5rem 2%; }
-main figure.photo img {
-  width: 100%; }
-main figure.photo figcaption {
-  text-align: center;
-  color: lightyellow; }
-main div.blog article {
-  margin: 0.5rem 2%;
-  width: 96%; }
+main ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none; }
+main a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  background-color: #f1d0c3;
+  height: 5rem;
+  width: 5rem;
+  margin: 2rem; }
 
 footer {
   width: 100%;
-  background-color: lightyellow; }
+  background-color: lightblue; }
   footer p {
     text-align: center;
-    color: lightyellow;
+    color: black;
     padding: .75rem;
     font-size: .9rem; }
 
@@ -178,40 +136,6 @@ footer {
   display: table;
   clear: both; }
 
-@media only screen and (min-width: 560px) {
-  main figure.photo {
-    width: 46%;
-    margin: 0.5rem 2%;
-    float: left; }
-  main div.blog article {
-    float: left;
-    width: 46%; }
-  main div.blog article:nth-child(2n+1) {
-    clear: left; } }
 @media only screen and (min-width: 1140px) {
   div#wrapper {
-    max-width: 80rem;
-    margin: 2rem auto;
-    box-shadow: 0 0 10px #000000; }
-
-  nav ul {
-    margin-left: 2%;
-    border-left: 1px solid rgba(0, 0, 0, 0.3); }
-  nav ul li {
-    width: auto; }
-  nav ul li:last-child {
-    border-right: 1px solid rgba(0, 0, 0, 0.3); }
-  nav ul li a {
-    padding: .5rem 1rem; }
-
-  main figure.photo {
-    width: 21%;
-    margin: 0.5rem 2%;
-    float: left; }
-  main div.blog article {
-    float: left;
-    width: 29.33%; }
-  main div.blog article:nth-child(2n+1) {
-    clear: none; }
-  main div.blog article:nth-child(3n+1) {
-    clear: left; } }
+    margin: 0 auto; } }
