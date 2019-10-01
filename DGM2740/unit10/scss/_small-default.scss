@@ -117,6 +117,10 @@ main {
 
 //Overall styling for the FORM of the document.
 
+form {
+    margin: 1rem 0 0 $gutter;
+}
+
 form fieldset {
     margin: 2rem 0;
     border: 1px solid #445ba9;
