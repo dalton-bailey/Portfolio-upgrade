@@ -95,7 +95,7 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 300px;
+        width: 13rem;
         padding: 10px 15px 10px 15px; 
         margin: 10px;
     }
@@ -117,21 +117,21 @@ main {
         width: 100%;
         display: flex;
         justify-content: space-between;
-        margin-top: 10px;
     }
 
     .location img {
-        width: 25px;
+        width: 1rem;
     }
 
     .phone img {
-        width: 25px;
+        width: 1rem;
     }
 
     .location {
         height: 50px;
         display: flex;
         align-items: center;
+        font-size: .4rem;
     }
 
     .location p {
@@ -149,6 +149,7 @@ main {
     .phone p {
         margin-left: 10px;
         font-weight: bold;
+        font-size: .4rem;
     }
 }
 
