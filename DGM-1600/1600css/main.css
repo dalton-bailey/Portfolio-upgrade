@@ -177,7 +177,6 @@ html,body {
   @media only screen and (max-width: 800px ) {
     #welcome-section {
       display: flex;
-      /* align-items: center; */
       justify-content: center;
       flex-wrap: wrap;
       margin-top: 5rem;
@@ -193,28 +192,16 @@ html,body {
     #hero-intro {
       display: none;
     }
-/* 
-    .name {
-      font-size: 2rem;
-      letter-spacing: 3px;
-      margin-top: 2rem;
-    }
-    
-    .title {
-      font-size: 1.5rem;
-      padding-top: .5rem;
-      letter-spacing: 2px;
-    } */
   }
 
   @media only screen and (max-width: 580px) {
+    /* hanburger */
     .checkbox {
       display: none;
     }
     
     .button {
       position: relative;
-      /* background-color: white; */
       height: 5rem;
       width: 5rem;
       border-radius: 50%;
@@ -222,7 +209,6 @@ html,body {
       top: 2vh; 
       right: 2vw; 
       z-index: 2000;
-    /*   box-shadow: 0 1rem 3rem black; */
       text-align: center; 
       cursor: pointer;
     }
@@ -261,7 +247,7 @@ html,body {
       width: 100%;
       display: flex;
       flex-direction: column;
-      
+
     }
     
     .item {
