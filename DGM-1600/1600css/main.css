@@ -93,48 +93,30 @@ html,body {
     text-align: left;
   }
 
-  .para-one {
-    font-size: 1.5rem;
-  }
-
-  .para-two {
-    padding-top: 2rem;
-    font-size: 1.5rem;
-  }
-
-.my-work {
-  color: black;
-  font-size: 2.5em;
-  letter-spacing: 3px;
-  margin-bottom: 1.5rem;
-  margin-top: 7rem;
-
-}
-
 #projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 5rem;
 }
-
 
 .project {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #CEDFE6;
-  width: 10rem;
-  height: 10rem;
+  width: 30rem;
+  border: 2px grey solid;
   margin: 2rem;
 }
 
-.project:hover {
-  background-color: #DEE2E1;
+.project div img {
+  width: 100%
 }
 
 #projects a {
   color: black;
   text-decoration: none;
+  font-size: 1.5rem;
 }
 
 .contact-details {

@@ -54,7 +54,7 @@ html,body {
 
   .about {
     font-size: 3.5rem;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
   }
 
   #welcome-section {
@@ -138,8 +138,8 @@ html,body {
   width: 5rem;
   border-radius: 50%;
   position: fixed;
-  top: 5vh; 
-  right: 5vw; 
+  top: 2vh; 
+  right: 2vw; 
   z-index: 2000;
   text-align: center; 
   cursor: pointer;
@@ -235,7 +235,7 @@ html,body {
 .icon::after {
   width: 3rem;
   height: 2px;
-  background-color: gray;
+  background-color: black;
   display: inline-block;
 }
 
