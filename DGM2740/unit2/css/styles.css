@@ -184,17 +184,8 @@ footer {
   nav ul li {
     width: 25%; }
 
-  main {
-   /* div.blog article {
-        float: left;
-        width: 50%-$gutterdbl;
-    }
-
-    div.blog article:nth-child(2n+1) {
-        clear:left;
-    }*/ }
-    main figure.photo {
-      width: 46%; } }
+  main figure.photo {
+    width: 46%; } }
 @media only screen and (min-width: 1140px) {
   header {
     max-width: 75rem;

@@ -6,71 +6,46 @@ body {
     font-family: $defaultFont;
     font-weight: $normalWeight;
     font-size: 16px;
-
-    
-    // figure.banner {
-    //     width: 100%;
-    // }
-
-    // figure.banner img {
-    //     display: block;
-    //     margin-left: auto;
-    //     margin-right: auto;
-    //     width: 100%;
-    // }
-
-    // figure.banner img:hover {
-    //     opacity: .8;
-    // }
 }
 
 //Overall styling for the HEADER of the document.
 header {
-    padding: 0rem 1rem 0rem 1rem;
-    height: 10rem;
-    // margin-top: -4.5rem;
-    // position: absolute;
+    height: 15rem;
     background-image: url("../images/tress-small-02.jpg");
     background-repeat: no-repeat;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-weight: $normalWeight;
+
+    .title {
+        position: absolute;
+        top: 10rem;
+        padding-left: $gutter;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
 }
 
 header:hover {
     opacity: .8;
 }
-
-.title {
-    display: flex;
-    flex-direction: column;
-}
-
-div {
-    color: white;
-    max-width: 60rem;
-    // margin: 0 auto;
-}
-
-h1 {
-    font-size: 2.5rem;
-    font-weight: $normalWeight;  
-}
-h2 {
-    font-size: 2rem;
-    font-weight: $normalWeight;
-}
-
 //Overall styling for the NAVIGATION of the document.
     nav {
         background-color: $secondaryColor;
-        border-bottom: 1px solid rgba(0,0,0,0.3);
 
-        ul li {
-            float: left;
-            width: 25%;
+        ul {
+            display: flex;
         }
 
-        ul li:last-child {
-            border-right: none;
+        ul li {
+            width: 25%;
         }
 
         ul li a {
@@ -88,38 +63,29 @@ h2 {
         }
 
         ul li a:hover {
-            color: $secondaryColor;
+            color: $blockColor;
             background-color: $primaryColor;
         }
     }
 
 //Overall styling for the MAIN of the document.
 main {
-    padding-bottom: 50px;
-    
-    h1 {
-        font-size: 2.5rem;
-        margin: 1rem 0 0 $gutter;
-        color: $secondaryColor;
-    }
+    padding-bottom: 4rem;
 
     h2 {
         font-size: 2rem;
         margin: 1rem 0 .5rem $gutter;
         color: $blockColor;
-        // color: lighten( $fontColor, 40% );
     }
 
     div.blog article {
         margin: .5rem $gutter;
-        width: 100%-$gutterdbl;
     }
 
     h3 {
         font-size: 1.5rem;
         color: $blockColor;
         margin: 1rem 0rem 1rem 0rem;
-        // color: lighten( $blockColor, 30% );
     }
 
     p {

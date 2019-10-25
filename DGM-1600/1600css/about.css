@@ -74,6 +74,13 @@ html,body {
     margin-top: 2rem;
   }
 
+.intent {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 12px;
+  text-align: left;
+  padding-top: 2rem;
+}
 .contact-details {
   display: inline-block;
   margin: 0 35px 45px 35px;

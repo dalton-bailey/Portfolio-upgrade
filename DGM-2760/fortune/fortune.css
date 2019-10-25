@@ -12,6 +12,8 @@ body {
     position: absolute;
     bottom: 8px;
     left: 16px;
+    font-size: 2rem;
+    color: white;
 }
 
 header img {
@@ -33,51 +35,25 @@ header img {
 }
 
 main h1 {
-    color: #234B4B;
+    color: black;
 }
 
 main h2 {
-    color: #769784;
+    color: black;
 }
 
 ul {
-    color: #234B4B;
+    color: black;
 }
 
-.date {
-    color: #769784;
-    font-size: 1.5rem;
+#fortune {
+    font-size: 2rem;
 }
 
-.name {
-    color: #234B4B;
-    font-size: 1.5rem;
-}
-
-section {
-    display: flex;
-    justify-content: space-around;
-    height: 30rem;
-    background-color: #234B4B;
-    color: white;
-    padding: 1rem;
-}
-
-section h2 {
-    color: white;
-}
-
-.a3 {
-    width: 20rem;
-}
-
-.award {
-    width: 100px;
-}
 
 footer {
     text-align: center;
-    background-color: #769784;
+    background-color: red;
     color: white;
 }
 

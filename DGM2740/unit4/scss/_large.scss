@@ -1,48 +1,27 @@
-//Overall styling for the BODY of the document.
-
-
-//Overall styling for the NAVIGATION of the document.
-nav {
-    ul {
-        max-width: 60rem;
-        margin: auto;
-    }
-
-    ul li {
-        width: auto;
-    }
-
-    ul li:last-child {
-        border-right: 1px solid rgba(0,0,0,0.3);
-    }
-
-    ul li a {
-        padding: .5rem 1rem;
-    }
-}
-
 // //Overall styling for the HEADER of the document.
+.banner {
+    background-color: red;
+}
 header {
     height: 15rem;
     background-image: url("../images/trees-large-03.jpg");
     background-repeat: no-repeat;
+    max-width: 69rem;
+    margin: auto;
 }
 
-// body {
-//     figure.banner {
-//         width: 100%;
-//     }
-
-//     figure.banner img {
-//         display: block;
-//         margin-left: auto;
-//         margin-right: auto;
-//     }
-// }
+//Overall styling for the NAVIGATION of the document.
+nav {
+    ul {
+        max-width: 69rem;
+        margin: auto;
+        padding-left: $gutter/2;
+    }
+}
 
 //Overall styling for the MAIN of the document.
 main {
-    max-width: 60rem;
+    max-width: 69rem;
     margin: auto;
 
     div.blog article {
