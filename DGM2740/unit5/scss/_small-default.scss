@@ -73,6 +73,7 @@ header {
 //Overall styling for the MAIN of the document.
 main {
     figure.banner {
+        background-image: url("../images/restaurant_restaurant-450.jpg");
         width: 100%;
     }
 
@@ -108,7 +109,7 @@ main {
     }
 
     figure.photo {
-        width: 100%-$gutterdbl;
+        width: 50%-$gutterdbl;
         margin: 1rem 0 0 $gutter;
         float: right;
     }

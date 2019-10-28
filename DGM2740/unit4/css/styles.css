@@ -200,9 +200,11 @@ footer {
 
   header {
     height: 15rem;
-    background-image: url("../images/trees-large-03.jpg");
+    background-image: url("../images/trees-large-03.jpg"), url("../images/color-background.png");
     background-repeat: no-repeat;
-    max-width: 69rem;
+    background-size: 69rem 15rem, cover;
+    background-position: center;
+    max-width: 100%;
     margin: auto; }
 
   nav ul {
