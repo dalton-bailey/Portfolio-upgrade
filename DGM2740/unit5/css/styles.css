@@ -139,11 +139,6 @@ nav {
     color: #F28F79;
     background-color: #F4DED0; }
 
-main figure.banner {
-  background-image: url("../images/restaurant_restaurant-450.jpg");
-  width: 100%; }
-main figure.banner img {
-  width: 100%; }
 main h2 {
   font-size: 2rem;
   margin: 1rem 0 0 2%;
@@ -230,3 +225,45 @@ footer {
     width: 29.33%; }
   main p.story {
     column-count: 4; } }
+@media only screen and (min-width: 300px) {
+  .banner {
+    background-image: url("../images/restaurant_restaurant-450.jpg");
+    background-size: 100%;
+    width: 100%;
+    height: 10rem;
+    background-repeat: no-repeat; } }
+@media only screen and (min-width: 550px) {
+  .banner {
+    background-image: url("../images/restaurant_restaurant-600.jpg");
+    background-size: 100%;
+    width: 100%;
+    height: 15rem;
+    background-repeat: no-repeat; } }
+@media only screen and (min-width: 700px) {
+  .banner {
+    background-image: url("../images/restaurant_restaurant-750.jpg");
+    background-size: 100%;
+    width: 100%;
+    height: 15rem;
+    background-repeat: no-repeat; } }
+@media only screen and (min-width: 850px) {
+  .banner {
+    background-image: url("../images/restaurant_restaurant-900.jpg");
+    background-size: 100%;
+    width: 100%;
+    height: 15rem;
+    background-repeat: no-repeat; } }
+@media only screen and (min-width: 900px) {
+  .banner {
+    background-image: url("../images/restaurant_restaurant-1050.jpg");
+    background-size: 100%;
+    width: 100%;
+    height: 20rem;
+    background-repeat: no-repeat; } }
+@media only screen and (min-width: 1050px) {
+  .banner {
+    background-image: url("../images/restaurant_restaurant-1200.jpg");
+    background-size: 100%;
+    width: 100%;
+    height: 20rem;
+    background-repeat: no-repeat; } }

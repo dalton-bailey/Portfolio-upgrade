@@ -22,32 +22,29 @@ header img {
     display: block;
 }
 
-.companyName, .slogan {
-    color: white;
+main {
+    margin: 1rem;
 }
 
-.companyName {
-    font-size: 2.5rem;
+.add, .remove {
+    display: flex;
+    flex-direction: column;
+    width: 21rem;
 }
 
-.slogan {
-    font-size: 2rem;
-}
-
-main h1 {
+button {
+    background-color: lightskyblue;
+    border: none;
     color: black;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 1rem;
+    margin: 0rem 0rem 1rem 0rem;
 }
 
-main h2 {
-    color: black;
-}
-
-ul {
-    color: black;
-}
-
-#fortune {
-    font-size: 2rem;
+button:hover {
+    background-color: cornflowerblue;
+    cursor: pointer;
 }
 
 
