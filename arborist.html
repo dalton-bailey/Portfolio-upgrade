@@ -11,7 +11,7 @@
 
 <body>
     <header class='header'>
-        <img src="DGM-2760/fortune/images/Fortune-Cookie-Recipe-Fifteen-Spatulas-2.jpg" alt="bed & breakfast">
+        <img src="DGM-2760/arborist/images/trees.jpg" alt="bed & breakfast">
         <div class="top">THE AROBORIST</div>
     </header>
 
@@ -23,8 +23,8 @@
             <li></li>
             <li></li>
         </ul>
-
-
+<section class="content">
+    <div class="buttons">
         <div class="add">
             <h2>Adding Tree Practice</h2>
             <button id="add_redwood">Add a Redwood Tree to the End</button>
@@ -38,22 +38,28 @@
             <button id="remove_tree3">Remove the last tree</button>
         </div>
 
+        <div class="sort">
+            <h2>Manipulating the tree list</h2>
+            <button id="sortTrees">Sort the trees A to Z</button>
+            <button id="lowerCase">Make all the trees lower case</button>
+        </div>
 
-        <h2>Manipulating the tree list</h2>
-        <button id="sortTrees">Sort the trees A to Z</button>
-        <button id="lowerCase">Make all the trees lower case</button>
+        <div class="name">
+            <h2>Getting any tree from the list</h2>
+            <button id="showName3">What is the name of tree #three</button>
+            <button id="showName4">What is the name of tree #four</button>
+        </div>
+    </div>
 
-        <h2>Getting any tree from the list</h2>
-        <button id="showName3">What is the name of tree number three</button>
-        <button id="showName4">What is the name of tree number four</button>
+    <aside>
+        <h2>The Tree List</h2>
+        <div id="displayResults"></div>
+        <h2>Error Message</h2>
+        <div id="error"></div>
+    </aside>
 
-        <aside>
-            <h2>The Tree List</h2>
-            <div id="displayResults"></div>
-            <h2>Error Message</h2>
-            <div id="error"></div>
-        </aside>
-
+</section>
+       
     </main>
     <footer>
         <p>&copy; 2019 Bailey Dalton</p>
