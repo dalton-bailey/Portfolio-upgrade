@@ -79,8 +79,6 @@ main {
             margin: 0 auto;
             padding-top: 1.5rem;
             display: flex;
-            // flex-direction: column;
-            // align-items: center;
             justify-content: space-between;
         }
 
@@ -111,7 +109,6 @@ main {
         .formula {
             display: flex;
             flex-direction: column;
-            // align-items: center;
             align-items: flex-end;
         }
 
@@ -131,7 +128,6 @@ main {
     
     .more {
         max-width: 70rem;
-        // width: 25rem;
         margin: 0 auto;
         color: $primaryColor;
         font-size: 2rem;
@@ -140,12 +136,8 @@ main {
 
     .mid-section {
         max-width: 70rem;
-        // width: 25rem;
         margin: 0 auto;
         column-count: 2;
-        // display: flex;
-        // flex-wrap: wrap;
-        // justify-content: space-between;
         border-top: 1px solid $fontColor;
         border-bottom: 1px solid $fontColor;
         background-color: lighten($fontColor, 30%);
@@ -175,7 +167,6 @@ main {
 
     .grid {
         max-width: 70rem;
-        // width: 25rem;
         margin: 0 auto;
         min-height: 20rem;
         display: grid;

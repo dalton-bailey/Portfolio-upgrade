@@ -71,6 +71,7 @@ main {
         margin: 0 auto;
         background-color: black;
         margin-top: -2px;
+        
     
         .sub-section {
             max-width: 70rem;
@@ -79,7 +80,6 @@ main {
             display: flex;
             flex-direction: column;
             align-items: center;
-            // justify-content: space-between;
         }
 
         h1 {
@@ -110,7 +110,6 @@ main {
             display: flex;
             flex-direction: column;
             align-items: center;
-            // align-items: flex-end;
         }
 
         .formula p {
@@ -129,7 +128,6 @@ main {
     
     .more {
         max-width: 70rem;
-        // width: 25rem;
         margin: 0 auto;
         color: $primaryColor;
         font-size: 2rem;
@@ -138,11 +136,7 @@ main {
 
     .mid-section {
         max-width: 70rem;
-        // width: 25rem;
         margin: 0 auto;
-        // display: flex;
-        // flex-wrap: wrap;
-        // justify-content: space-between;
         border-top: 1px solid $fontColor;
         border-bottom: 1px solid $fontColor;
         background-color: lighten($fontColor, 30%);
@@ -161,31 +155,32 @@ main {
         h1 {
             color: $primaryColor;
             font-size: 2rem;
-            margin: 1rem 0 .5rem 0;
+            margin: 1rem .5rem .5rem .5rem;
         }
 
         p {
             color: $fontColor;
             line-height: 120%;
+            margin: 0 .5rem .5rem .5rem;
+
         }
     }
 
     .grid {
         max-width: 70rem;
-        // width: 25rem;
         margin: 0 auto;
         min-height: 20rem;
-        // display: grid;
-        // grid-template-columns: 1fr;
-        // grid-column-gap: 10px;
-        // grid-row-gap: 10px;
         background-color: lighten($fontColor, 30%);
         padding: 1rem 0 5rem 0;
         
         h1 {
             font-size: 2rem;
-            margin: 1.5rem 0 .5rem 0;
+            margin: 1rem .5rem .5rem .5rem;
             color: $primaryColor;
+        }
+
+        p {
+            margin: 0 .5rem .5rem .5rem;
         }
      
          div.teaser {
@@ -204,22 +199,8 @@ main {
              display: block;
              width: 100%;
          }
-     
-        //  div.firstTop {
-        //      grid-row: 1;
-        //      grid-column: 1 / span 1;
-        //     grid-row: 1;
-            
-        //  }
-     
-        //  div.secondTop {
-        //      grid-row: 2;
-        //      grid-column: 2 / span 1;
-        //  }
 
          div.thirdTop {
-            //  grid-row: 1 / span 2;
-            //  grid-column: 3 / span 1;
 
             div {
                  display: flex;
@@ -243,11 +224,6 @@ main {
 
              
          }
-
-        //  div.bottom {
-        //      grid-row: 2;
-        //      grid-column: 1 / span 2;
-        //  }
      
     }
 
@@ -274,7 +250,6 @@ footer {
         padding: 1rem;
         font-size: 1rem;
         font-weight: $boldWeight;
-        // text-align: center;
     }
 }
 

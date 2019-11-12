@@ -197,10 +197,11 @@ input, select {
     main .mid-section h1 {
       color: #0480b1;
       font-size: 2rem;
-      margin: 1rem 0 .5rem 0; }
+      margin: 1rem .5rem .5rem .5rem; }
     main .mid-section p {
       color: #a8a8b2;
-      line-height: 120%; }
+      line-height: 120%;
+      margin: 0 .5rem .5rem .5rem; }
   main .grid {
     max-width: 70rem;
     margin: 0 auto;
@@ -209,8 +210,10 @@ input, select {
     padding: 1rem 0 5rem 0; }
     main .grid h1 {
       font-size: 2rem;
-      margin: 1.5rem 0 .5rem 0;
+      margin: 1rem .5rem .5rem .5rem;
       color: #0480b1; }
+    main .grid p {
+      margin: 0 .5rem .5rem .5rem; }
     main .grid div.teaser {
       position: relative; }
     main .grid div.teaser p {
