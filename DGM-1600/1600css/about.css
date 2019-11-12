@@ -127,6 +127,9 @@ html,body {
       padding-left: 0rem;
       text-align: center;
     }
+    .intent {
+      text-align: center;
+    }
 
   }
 
@@ -291,4 +294,6 @@ html,body {
     #hero-header div {
       margin-top: 4rem;
     }
+
+    
   }

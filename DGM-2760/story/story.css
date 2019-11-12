@@ -22,46 +22,6 @@ header img {
     display: block;
 }
 
-main {
-    margin: 1rem;
-}
-
-.content {
-    display: flex;
-    justify-content: space-around;
-
-}
-
-.add, .remove, .sort, .name {
-    display: flex;
-    flex-direction: column;
-    width: 21rem;
-}
-
-button {
-    background-color: lightskyblue;
-    border: none;
-    color: black;
-    padding: 1rem;
-    text-align: center;
-    font-size: 1.2rem;
-    margin: 0rem 0rem 1rem 0rem;
-}
-
-button:hover {
-    background-color: cornflowerblue;
-    cursor: pointer;
-}
-
-#displayResults {
-    font-size: 1.2rem;
-}
-
-#error {
-    font-size: 1.2rem;
-    background-color: yellow;
-    padding: 1rem;
-}
 
 footer {
     text-align: center;

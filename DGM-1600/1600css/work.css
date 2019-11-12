@@ -66,16 +66,28 @@ html,body {
     align-items: center;
     width: 30rem;
     border: 1px grey solid;
+    margin: 4rem;
   }
+
+  .project div img:hover {
+    opacity: 1;
+  }
+
   
   .project div img {
-    width: 100%
+    width: 100%;
+    opacity: .7;
+
+  }
+
+  .project div p {
+    padding: 1rem;
   }
   
   #projects a {
     color: black;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   
   .contact-details {
