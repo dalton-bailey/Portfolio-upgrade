@@ -61,27 +61,44 @@ div.smallNavBar {
         @extend .humburger;
         background-image: url(../photos/menuIconWhite.png);
     }
-    
 
-    nav {
-        height: 100vh;
-        width: 100%;
-        background-image: linear-gradient(to right, $secondaryColor , #05DBF2);
-        border-bottom: 1px solid rgba(0,0,0,0.3);
+
+nav {
+    background-color: $secondaryColor;
+    background-image: linear-gradient(to right, $secondaryColor , #05DBF2);
+    width: 100%;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    font-size: 1rem;
+
+    button {
+        background-image: url(../photos/menuIconWhite.png);
+        background-repeat: no-repeat;
+        width: 72px;
+        height: 32px;
+        background-color: $secondaryColor;
+        // background-size: 50%;
+        background-position: center center;
+        border: none;
+        border-radius: 5px;
+        margin: 6px 0 6px 2%;
+    }
+    
+    ul.closed {
+        display: none;
+    }
 
     ul li a {
         display: block;
-        font-weight: $boldWeight;
-        padding: .5rem $gutter;
-        color: $primaryColor;
+        padding: .7rem 2%;
+        color: #fff;
         text-decoration: none;
+        border-bottom: solid 1px rgba(0, 0, 0,0.3);
         transition: background 0.75s ease, color  0.75s ease;
     }
 
-    ul li a:hover {
-        color: $secondaryColor;
-        background-color: $primaryColor;
-    }
+    ul li.active a {
+        background-color: darken($secondaryColor, 10%);
+    } 
 }
 
 //Overall styling for the MAIN of the document.
@@ -98,9 +115,13 @@ main {
         margin: 30px 0px 10px 0px;
     }
 
+    .icons {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     a.coolTrick {
         display: block;
-        float: left;
         width: 96%;
         margin: 1rem 2%;
         position: relative;

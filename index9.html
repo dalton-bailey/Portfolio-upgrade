@@ -7,8 +7,8 @@
     <title>Boston</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet">
     <link href="DGM2740/Unit9/css/styles.css" rel="stylesheet">
-    <link href="DGM2740/Unit9/slick/slick.css" rel="stylesheet">
-    <link href="DGM2740/Unit9/slick/slick-theme.css" rel="stylesheet">
+    <link href="DGM2740/Unit9/js/slick-1.8.1/slick/slick.css" rel="stylesheet">
+    <link href="DGM2740/Unit9/js/slick-1.8.1/slick/slick-theme.css" rel="stylesheet">
 </head>
 
 <body id="top">
@@ -16,7 +16,6 @@
 
         <!-- PAGE HEADER GOES HERE -->
 
-        <div class="smallNavBar"><a class="humburgerOpen" href="#footerLinks"></a></div>
         <div class="clearfix">
             <figure class="banner">
                 <img src="DGM2740/unit9/photos/boston2.jpg">
@@ -28,71 +27,13 @@
             <h2>Where History Comes Alive</h2>
         </header>
 
-        <!-- PAGE CONTENT GOES HERE -->
-
-        <main class="clearfix">
-            <div class="myslider">
-                <picture>
-                    <source srcset="DGM2740/Unit9/photos/boston7.jpg" media="(min-width: 29.25rem)">
-                    <img srcset="DGM2740/Unit9/sliders-assets/slider01s.jpg" alt="slider">
-                </picture>
-                <picture>
-                    <source srcset="DGM2740/Unit9/photos/boston3.jpg" media="(min-width: 29.25rem)">
-                    <img srcset="Unit9/sliders-assets/slider02s.jpg" alt="slider">
-                </picture>
-                <picture>
-                    <source srcset="DGM2740/Unit9/photos/boston4.1.jpg" media="(min-width: 29.25rem)">
-                    <img srcset="DGM2740/Unit9/sliders-assets/slider03s.jpg" alt="slider">
-                </picture>
-                <picture>
-                    <source srcset="DGM2740/Unit9/photos/boston5.jpg" media="(min-width: 29.25rem)">
-                    <img srcset="DGM2740/Unit9/sliders-assets/slider04s.jpg" alt="slider">
-                </picture>
-                <picture>
-                    <source srcset="Unit9/photos/boston6.jpg" media="(min-width: 29.25rem)">
-                    <img srcset="DGM2740/Unit9/sliders-assets/slider05s.jpg" alt="slider">
-                </picture>
-
-            </div>
-            <h1>Plan Your Visit</h1>
-            <a href="#" class="coolTrick">
-                <div class="coverColor"></div>
-                <img src="DGM2740/Unit9/photos/bostonhotel.jpg" class="photo">
-                <div class="icon"><img src="DGM2740/images/hotelicon.png"></div>
-                <div class="text">PLACES TO STAY</div>
-            </a>
-            <a href="#" class="coolTrick">
-                <div class="coverColor"></div>
-                <img src="DGM2740/Unit9/photos/bostonline.jpg" class="photo">
-                <div class="icon"><img src="DGM2740/images/walkingicon.png"></div>
-                <div class="text">WALK THE READ  LINE</div>
-            </a>
-            <a href="#" class="coolTrick">
-                <div class="coverColor"></div>
-                <img src="DGM2740/Unit9/photos/boston1.jpg" class="photo">
-                <div class="icon"><img src="DGM2740/images/passicon.png"></div>
-                <div class="text">PASS TO THE CITY</div>
-            </a>
-            <a href="#" class="coolTrick">
-                <div class="coverColor"></div>
-                <img src="DGM2740/Unit9/photos/bostonrestaurant.jpg" class="photo">
-                <div class="icon"><img src="DGM2740/images/diningicon.png"></div>
-                <div class="text">FINE DINING</div>
-            </a>
-
-        </main>
-
-        <!-- PAGE FOOTER GOES HERE -->
-
-        <footer>
-            <p>&copy; 2019 Bailey Dalton Phone 1-800-555-1234 Login</p>
-        </footer>
-
         <!-- PAGE NAVIGATION GOES HERE -->
+        <!-- <div class="smallNavBar"><a class="humburgerOpen" href="#footerLinks"></a></div> -->
 
         <nav class="clearfix" id="footerLinks">
-            <div><a class="humburgerClose" href=#top></a></div>
-            <ul class="clearfix" id="primaryNav">
+            <!-- <div><a class="humburgerClose" href=#top></a></div> -->
+            <button id="hamburgerBtn"></button>
+            <ul id="primaryNav" class="closed">
                 <li class="active"><a href="index.html">Visit</a></li>
                 <li><a href="second.html">Departments</a></li>
                 <li><a href="third.html">Services</a></li>
@@ -101,6 +42,58 @@
                 <li><a href="fourth.html">Help</a></li>
             </ul>
         </nav>
+
+        <!-- PAGE CONTENT GOES HERE -->
+
+        <div class="myslider">
+            <div>
+                <img src="DGM2740/unit9/photos/sliders-01.jpg">
+                <img src="DGM2740/unit9/photos/sliders-02.jpg">
+                <img src="DGM2740/unit9/photos/sliders-03.jpg">
+                <img src="DGM2740/unit9/photos/sliders-04.jpg">
+                <img src="DGM2740/unit9/photos/sliders-05.jpg">
+            </div>
+        </div>
+
+        <main class="clearfix">
+
+            <h1>Plan Your Visit</h1>
+            <div class="icons">
+                <a href="#" class="coolTrick">
+                    <div class="coverColor"></div>
+                    <img src="DGM2740/Unit9/photos/bostonhotel.jpg" class="photo">
+                    <div class="icon"><img src="DGM2740/images/hotelicon.png"></div>
+                    <div class="text">PLACES TO STAY</div>
+                </a>
+                <a href="#" class="coolTrick">
+                    <div class="coverColor"></div>
+                    <img src="DGM2740/Unit9/photos/bostonline.jpg" class="photo">
+                    <div class="icon"><img src="DGM2740/images/walkingicon.png"></div>
+                    <div class="text">WALK THE READ LINE</div>
+                </a>
+                <a href="#" class="coolTrick">
+                    <div class="coverColor"></div>
+                    <img src="DGM2740/Unit9/photos/boston1.jpg" class="photo">
+                    <div class="icon"><img src="DGM2740/images/passicon.png"></div>
+                    <div class="text">PASS TO THE CITY</div>
+                </a>
+                <a href="#" class="coolTrick">
+                    <div class="coverColor"></div>
+                    <img src="DGM2740/Unit9/photos/bostonrestaurant.jpg" class="photo">
+                    <div class="icon"><img src="DGM2740/images/diningicon.png"></div>
+                    <div class="text">FINE DINING</div>
+                </a>
+            </div>
+
+
+        </main>
+
+        <!-- PAGE FOOTER GOES HERE -->
+
+        <footer>
+            <p>&copy; 2019 Bailey Dalton Phone 1-800-555-1234 Login</p>
+        </footer>
+        <script src="DGM2740/js/menuToggle.js"></script>    
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="Unit9/slick/slick.min.js"></script>

@@ -4,46 +4,41 @@ a.humburgerOpen, a.humburgerClose {
 }
 
 nav {
-    position: absolute;
-    top: 0;
-    height: auto;
-    background-image: linear-gradient(to right, $secondaryColor , #05DBF2);
-    border-bottom: 1px solid rgba(0,0,0,0.3);
-    max-width: 64rem;
+    position: relative;
+
+    button {
+        display: none;
+    }
+
+    ul.closed {
+        display: block;
+    }
 
     ul {
         margin-left: $gutter;
-    }
+        border-left: 1px solid rgba(0,0,0,0.3);
+        }
 
     ul li {
-        float: left;
-        width: 16%;
-        // border-right: 1px solid rgba(0,0,0,0.3);
+       float: left;
     }
 
     ul li:last-child {
-        border-right: none;
+        border-right: 1px solid rgba(0,0,0,0.3);
     }
 
     ul li a {
-        display: block;
-        text-align: center;
-        font-weight: $boldWeight;
-        padding: .5rem 0;
-        color: $primaryColor;
-        text-decoration: none;
-        transition: background 0.75s ease, color  0.75s ease;
-    }
-
-    ul li.active a {
-        background-color: darken($secondaryColor, 10%);
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.2);
+        padding: .5rem 1rem;
     }
 
     ul li a:hover {
-        color: $secondaryColor;
-        background-color: $primaryColor;
-    }
+            color: $secondaryColor;
+            background-color: $primaryColor;
+        }
 
+    
 }
 
 //Overall styling for the MAIN of the document.

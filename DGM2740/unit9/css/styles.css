@@ -138,20 +138,32 @@ div.smallNavBar {
   background-image: url(../photos/menuIconWhite.png); }
 
 nav {
-  height: 100vh;
-  width: 100%;
+  background-color: #0583F2;
   background-image: linear-gradient(to right, #0583F2, #05DBF2);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  font-size: 1rem; }
+  nav button {
+    background-image: url(../photos/menuIconWhite.png);
+    background-repeat: no-repeat;
+    width: 72px;
+    height: 32px;
+    background-color: #0583F2;
+    background-position: center center;
+    border: none;
+    border-radius: 5px;
+    margin: 6px 0 6px 2%; }
+  nav ul.closed {
+    display: none; }
   nav ul li a {
     display: block;
-    font-weight: 700;
-    padding: 0.5rem 2%;
-    color: #F1E5C0;
+    padding: .7rem 2%;
+    color: #fff;
     text-decoration: none;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.3);
     transition: background 0.75s ease, color  0.75s ease; }
-  nav ul li a:hover {
-    color: #0583F2;
-    background-color: #F1E5C0; }
+  nav ul li.active a {
+    background-color: #0468c0; }
 
 main div.myslider div {
   width: 100%; }
@@ -161,9 +173,11 @@ main h1 {
   font-size: 2rem;
   color: black;
   margin: 30px 0px 10px 0px; }
+main .icons {
+  display: flex;
+  flex-wrap: wrap; }
 main a.coolTrick {
   display: block;
-  float: left;
   width: 96%;
   margin: 1rem 2%;
   position: relative; }
@@ -214,29 +228,22 @@ footer {
     display: none; }
 
   nav {
-    position: absolute;
-    top: 0;
-    height: auto;
-    background-image: linear-gradient(to right, #0583F2, #05DBF2);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    max-width: 64rem; }
+    position: relative; }
+    nav button {
+      display: none; }
+    nav ul.closed {
+      display: block; }
     nav ul {
-      margin-left: 2%; }
+      margin-left: 2%;
+      border-left: 1px solid rgba(0, 0, 0, 0.3); }
     nav ul li {
-      float: left;
-      width: 16%; }
+      float: left; }
     nav ul li:last-child {
-      border-right: none; }
+      border-right: 1px solid rgba(0, 0, 0, 0.3); }
     nav ul li a {
-      display: block;
-      text-align: center;
-      font-weight: 700;
-      padding: .5rem 0;
-      color: #F1E5C0;
-      text-decoration: none;
-      transition: background 0.75s ease, color  0.75s ease; }
-    nav ul li.active a {
-      background-color: #0468c0; }
+      border: none;
+      border-right: 1px solid rgba(0, 0, 0, 0.2);
+      padding: .5rem 1rem; }
     nav ul li a:hover {
       color: #0583F2;
       background-color: #F1E5C0; }
@@ -248,14 +255,11 @@ footer {
     max-width: 64rem;
     margin: auto; }
 
-  .nav ul {
-    margin-left: 2%;
-    border-left: 1px solid rgba(0, 0, 0, 0.3); }
-  .nav ul li {
+  nav ul {
+    margin-left: 2%; }
+  nav ul li {
     width: auto; }
-  .nav ul li:last-child {
-    border-right: 1px solid rgba(0, 0, 0, 0.3); }
-  .nav ul li a {
+  nav ul li a {
     padding: .5rem 1rem; }
 
   main a.coolTrick {

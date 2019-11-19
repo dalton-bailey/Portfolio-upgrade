@@ -26,12 +26,10 @@ header {
 //Overall styling for the NAVIGATION of the document.
     nav {
         background-color: $secondaryColor;
-        // border-bottom: 1px solid rgba(0,0,0,0.3);
 
         ul li {
             float: left;
             width: 25%;
-            // border-right: 1px solid rgba(0,0,0,0.3);
         }
 
         ul li:last-child {
