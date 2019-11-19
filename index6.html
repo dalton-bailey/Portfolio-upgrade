@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="DGM2740/Unit6/css/styles.css" rel="stylesheet">
+    <link href="DGM2740/Unit9/js/slick-1.8.1/slick/slick.css" rel="stylesheet">
+    <link href="DGM2740/Unit9/js/slick-1.8.1/slick/slick-theme.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -117,54 +119,43 @@
             </div>
 
             <h1>Perfomances</h1>
+            <!-- <article class="lazy">
+                <img alt="photo" data-lazy="DGM2740/unit6/images/concert1.jpg">
 
-            <article class="gallery">
-                <figure>
-                    <img class="lazy" alt="photo" src="DGM2740/unit6/images/concert1.jpg" data-src="images/betSheanA_1200.jpg">
-                </figure>
-                <figure>
-                    <img class="lazy" alt="photo" src="DGM2740/unit6/images/concert2.jpg" data-src="images/betSheanB_1200.jpg">
-                </figure>
-                <figure>
-                    <img class="lazy" alt="photo" src="DGM2740/unit6/images/concert3.jpg" data-src="images/betSheanC_1200.jpg">
-                </figure>
-                <figure>
-                    <img class="lazy" alt="photo" src="DGM2740/unit6/images/concert4.jpg" data-src="images/caesareaA_1200.jpg">
-                </figure>
-                <figure>
-                    <img class="lazy" alt="photo" src="DGM2740/unit6/images/concert5.jpg" data-src="images/caesareaB_1200.jpg">
-                </figure>
-                <figure>
-                    <img class="lazy" alt="photo" src="DGM2740/unit6/images/concert6.jpg" data-src="images/masada_1200.jpg">
-                </figure>
-                <figure>
-                    <img class="lazy" alt="photo" src="DGM2740/unit6/images/concert7.jpg" data-src="images/mosk_1200.jpg">
-                </figure>
-                <figure>
-                    <img class="lazy" alt="photo" src="DGM2740/unit6/images/concert8.jpg" data-src="images/sermon_1200.jpg">
-                </figure>
-                <figure>
-                    <img class="lazy" alt="photo" src="DGM2740/unit6/images/concert9.jpg" data-src="images/tiberius_1200.jpg">
-                </figure>
-                <figure>
-                    <img class="lazy" alt="photo" src="DGM2740/unit6/images/concert10.jpg" data-src="images/betSheanA_1200.jpg">
-                </figure>
-                <figure>
-                    <img class="lazy" alt="photo" src="DGM2740/unit6/images/concert11.jpg" data-src="images/betSheanA_1200.jpg">
-                </figure>
-                <figure>
-                    <img class="lazy" alt="photo" src="DGM2740/unit6/images/concert12.jpg" data-src="images/betSheanA_1200.jpg">
-                </figure>
-                <figure>
-                    <img class="lazy" alt="photo" src="DGM2740/unit6/images/concert13.jpg" data-src="images/betSheanA_1200.jpg">
-                </figure>
-                <figure>
-                    <img class="lazy" alt="photo" src="DGM2740/unit6/images/concert14.jpg" data-src="images/betSheanA_1200.jpg">
-                </figure>
-                <figure>
-                    <img class="lazy" alt="photo" src="DGM2740/unit6/images/concert15.jpg" data-src="images/betSheanA_1200.jpg">
-                </figure>
-            </article>
+                <img alt="photo" data-lazy="DGM2740/unit6/images/concert2.jpg">
+
+                <img alt="photo" data-lazy="DGM2740/unit6/images/concert3.jpg">
+
+                <img alt="photo" data-lazy="DGM2740/unit6/images/concert4.jpg">
+
+                <img alt="photo" data-lazy="DGM2740/unit6/images/concert5.jpg">
+
+                <img alt="photo" data-lazy="DGM2740/unit6/images/concert6.jpg">
+
+                <img alt="photo" data-lazy="DGM2740/unit6/images/concert7.jpg">
+
+                <img alt="photo" data-lazy="DGM2740/unit6/images/concert8.jpg">
+
+                <img alt="photo" data-lazy="DGM2740/unit6/images/concert9.jpg">
+
+                <img alt="photo" data-lazy="DGM2740/unit6/images/concert10.jpg">
+
+                <img alt="photo" data-lazy="DGM2740/unit6/images/concert11.jpg">
+
+                <img alt="photo" data-lazy="DGM2740/unit6/images/concert12.jpg">
+
+                <img alt="photo" data-lazy="DGM2740/unit6/images/concert13.jpg">
+
+                <img alt="photo" data-lazy="DGM2740/unit6/images/concert14.jpg">
+
+                <img alt="photo" data-lazy="DGM2740/unit6/images/concert15.jpg">
+
+            </article> -->
+
+            <div class="lazy">
+                <img data-lazy="DGM2740/unit6/images/concert1">
+            </div>
+
         </main>
 
         <!-- PAGE FOOTER GOES HERE -->
@@ -172,11 +163,13 @@
             <p>&copy; 2019 Bailey Dalton Login</p>
         </footer>
     </div>
-    <script src="js/lazyload.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="DGM2740/unit9/js/slick-1.8.1/slick/slick.min.js"></script>
     <script>
-        var lazyLoadInstance = new LazyLoad({
-            threshold: 0,
-            elements_selector: ".lazy"
+        $('.lazy').slick({
+            slidesToShow: 1,
+            slidesToScroll: 0
         });
     </script>
 
