@@ -3,14 +3,23 @@
     background-color: red;
 }
 header {
-    height: 15rem;
-    background-image: url("../images/trees-large-03.jpg"), url("../images/color-background.png");
+    height: 14rem;
+    background-image: url("../images/trees-large.jpg"), url("../images/color-background.png");
     background-repeat: no-repeat;
     background-size: 69rem 15rem, cover;
     background-position: center;
     max-width: 100%;
     margin: auto;
 }
+
+.title {
+    max-width: 69rem;
+    margin: auto;
+    padding-left: $gutter/2;
+    margin-top: -4.5rem;
+
+}
+
 
 //Overall styling for the NAVIGATION of the document.
 nav {
@@ -26,17 +35,17 @@ main {
     max-width: 69rem;
     margin: auto;
 
-    div.blog article {
-        float:left;
-        width: 33.33%-$gutterdbl;
-    }
+    // div.blog article {
+    //     float:left;
+    //     width: 33.33%-$gutterdbl;
+    // }
 
-    div.blog article:nth-child(2n+1) {
-        clear:none;
-    }
+    // div.blog article:nth-child(2n+1) {
+    //     clear:none;
+    // }
 
-    div.blog article:nth-child(3n+1) {
-        clear:left;
-    }
+    // div.blog article:nth-child(3n+1) {
+    //     clear:left;
+    // }
 
 }

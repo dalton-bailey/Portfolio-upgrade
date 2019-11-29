@@ -153,7 +153,24 @@
             </article> -->
 
             <div class="lazy">
-                <img data-lazy="DGM2740/unit6/images/concert1">
+                <div>
+                    <img data-lazy="DGM2740/unit6/images/concert1.jpg"> 
+                </div> 
+                <div>
+                    <img data-lazy="DGM2740/unit6/images/concert2.jpg">
+                </div>
+                <div>
+                    <img data-lazy="DGM2740/unit6/images/concert3.jpg">
+                </div>
+                <div>
+                    <img data-lazy="DGM2740/unit6/images/concert4.jpg"> 
+                </div> 
+                <div>
+                    <img data-lazy="DGM2740/unit6/images/concert5.jpg">
+                </div>
+                <div>
+                    <img data-lazy="DGM2740/unit6/images/concert6.jpg">
+                </div>
             </div>
 
         </main>
@@ -168,8 +185,8 @@
     <script type="text/javascript" src="DGM2740/unit9/js/slick-1.8.1/slick/slick.min.js"></script>
     <script>
         $('.lazy').slick({
-            slidesToShow: 1,
-            slidesToScroll: 0
+            lazyLoad: 'progressive',
+            slidesToScroll: 1
         });
     </script>
 

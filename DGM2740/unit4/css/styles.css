@@ -100,26 +100,28 @@ body {
   font-weight: 700;
   font-size: 16px; }
 
+.title {
+  max-width: 69rem;
+  margin: auto;
+  padding-left: 1%;
+  margin-top: -4.5rem;
+  color: white; }
+  .title h1 {
+    font-size: 2.5rem; }
+  .title h2 {
+    font-size: 2rem; }
+
 header {
-  height: 15rem;
-  background-image: url("../images/tress-small-02.jpg");
+  height: 14rem;
+  background-image: url("../images/trees-small.jpg");
   background-repeat: no-repeat;
-  width: 100%;
   display: flex;
   flex-direction: column;
   color: white;
-  font-weight: 700; }
-  header .title {
-    position: absolute;
-    top: 10rem;
-    padding-left: 2%; }
-  header h1 {
-    font-size: 2.5rem; }
-  header h2 {
-    font-size: 2rem; }
-
-header:hover {
-  opacity: .8; }
+  font-weight: 700;
+  background-size: cover;
+  background-position: center;
+  margin: auto; }
 
 nav {
   background-color: darkseagreen; }
@@ -156,7 +158,40 @@ main {
   main p {
     line-height: 130%;
     color: black; }
-
+  main .bear {
+    display: flex;
+    flex-direction: column;
+    /* Safari 4.0 - 8.0 */
+    /* Standard syntax */ }
+    main .bear img {
+      width: 8rem;
+      position: relative;
+      -webkit-animation-name: example;
+      /* Safari 4.0 - 8.0 */
+      -webkit-animation-duration: 4s;
+      /* Safari 4.0 - 8.0 */
+      animation-name: example;
+      animation-duration: 4s; }
+@-webkit-keyframes example {
+  0% {
+    left: 0px;
+    top: 0px; }
+  50% {
+    left: -200px;
+    top: 0px; }
+  100% {
+    left: 0px;
+    top: 0px; } }
+@keyframes example {
+  0% {
+    left: -200px;
+    top: 0px; }
+  50% {
+    left: 25px;
+    top: 0px; }
+  100% {
+    left: 0px;
+    top: 0px; } }
 footer {
   width: 100%;
   background-color: darkseagreen; }
@@ -173,8 +208,8 @@ footer {
 
 @media only screen and (min-width: 560px) {
   header {
-    height: 15rem;
-    background-image: url("../images/trees-medium-01.jpg");
+    height: 14rem;
+    background-image: url("../images/trees-medium.jpg");
     background-repeat: no-repeat; }
 
   nav ul {
@@ -188,24 +223,25 @@ footer {
   main figure.photo {
     width: 46%;
     margin: 0.5rem 2%;
-    float: left; }
-  main div.blog article {
-    float: left;
-    width: 46%; }
-  main div.blog article:nth-child(2n+1) {
-    clear: left; } }
+    float: left; } }
 @media only screen and (min-width: 1140px) {
   .banner {
     background-color: red; }
 
   header {
-    height: 15rem;
-    background-image: url("../images/trees-large-03.jpg"), url("../images/color-background.png");
+    height: 14rem;
+    background-image: url("../images/trees-large.jpg"), url("../images/color-background.png");
     background-repeat: no-repeat;
     background-size: 69rem 15rem, cover;
     background-position: center;
     max-width: 100%;
     margin: auto; }
+
+  .title {
+    max-width: 69rem;
+    margin: auto;
+    padding-left: 1%;
+    margin-top: -4.5rem; }
 
   nav ul {
     max-width: 69rem;
@@ -214,11 +250,4 @@ footer {
 
   main {
     max-width: 69rem;
-    margin: auto; }
-    main div.blog article {
-      float: left;
-      width: 29.33%; }
-    main div.blog article:nth-child(2n+1) {
-      clear: none; }
-    main div.blog article:nth-child(3n+1) {
-      clear: left; } }
+    margin: auto; } }

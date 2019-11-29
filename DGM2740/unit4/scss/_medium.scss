@@ -1,7 +1,7 @@
 //Overall styling for the HEADER of the document.
 header {
-    height: 15rem;
-    background-image: url("../images/trees-medium-01.jpg");
+    height: 14rem;
+    background-image: url("../images/trees-medium.jpg");
     background-repeat: no-repeat;
 }
 
@@ -29,12 +29,12 @@ main {
         float: left;
     }
 
-    div.blog article {
-        float: left;
-        width: 50%-$gutterdbl;
-    }
+    // div.blog article {
+    //     float: left;
+    //     width: 50%-$gutterdbl;
+    // }
 
-    div.blog article:nth-child(2n+1) {
-        clear:left;
-    }
+    // div.blog article:nth-child(2n+1) {
+    //     clear:left;
+    // }
 }
