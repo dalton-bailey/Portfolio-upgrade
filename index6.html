@@ -119,58 +119,21 @@
             </div>
 
             <h1>Perfomances</h1>
-            <!-- <article class="lazy">
-                <img alt="photo" data-lazy="DGM2740/unit6/images/concert1.jpg">
-
-                <img alt="photo" data-lazy="DGM2740/unit6/images/concert2.jpg">
-
-                <img alt="photo" data-lazy="DGM2740/unit6/images/concert3.jpg">
-
-                <img alt="photo" data-lazy="DGM2740/unit6/images/concert4.jpg">
-
-                <img alt="photo" data-lazy="DGM2740/unit6/images/concert5.jpg">
-
-                <img alt="photo" data-lazy="DGM2740/unit6/images/concert6.jpg">
-
-                <img alt="photo" data-lazy="DGM2740/unit6/images/concert7.jpg">
-
-                <img alt="photo" data-lazy="DGM2740/unit6/images/concert8.jpg">
-
-                <img alt="photo" data-lazy="DGM2740/unit6/images/concert9.jpg">
-
-                <img alt="photo" data-lazy="DGM2740/unit6/images/concert10.jpg">
-
-                <img alt="photo" data-lazy="DGM2740/unit6/images/concert11.jpg">
-
-                <img alt="photo" data-lazy="DGM2740/unit6/images/concert12.jpg">
-
-                <img alt="photo" data-lazy="DGM2740/unit6/images/concert13.jpg">
-
-                <img alt="photo" data-lazy="DGM2740/unit6/images/concert14.jpg">
-
-                <img alt="photo" data-lazy="DGM2740/unit6/images/concert15.jpg">
-
-            </article> -->
+          
 
             <div class="lazy">
-                <div>
-                    <img data-lazy="DGM2740/unit6/images/concert1.jpg"> 
-                </div> 
-                <div>
-                    <img data-lazy="DGM2740/unit6/images/concert2.jpg">
-                </div>
-                <div>
-                    <img data-lazy="DGM2740/unit6/images/concert3.jpg">
-                </div>
-                <div>
-                    <img data-lazy="DGM2740/unit6/images/concert4.jpg"> 
-                </div> 
-                <div>
-                    <img data-lazy="DGM2740/unit6/images/concert5.jpg">
-                </div>
-                <div>
-                    <img data-lazy="DGM2740/unit6/images/concert6.jpg">
-                </div>
+                    <img alt="A lazy image" data-src="DGM2740/unit6/images/concert1">
+
+                    <img alt="A lazy image" data-src="DGM2740/unit6/images/concert2">
+                    <img alt="A lazy image" data-src="DGM2740/unit6/images/concert3">
+
+                    <img alt="A lazy image" data-src="DGM2740/unit6/images/concert4">
+
+                    <img alt="A lazy image" data-src="DGM2740/unit6/images/concert5">
+
+                    <img alt="A lazy image" data-src="DGM2740/unit6/images/concert6">
+
+                    <img alt="A lazy image" data-src="DGM2740/unit6/images/concert7">
             </div>
 
         </main>
@@ -180,7 +143,7 @@
             <p>&copy; 2019 Bailey Dalton Login</p>
         </footer>
     </div>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="DGM2740/unit9/js/slick-1.8.1/slick/slick.min.js"></script>
     <script>
@@ -188,6 +151,16 @@
             lazyLoad: 'progressive',
             slidesToScroll: 1
         });
+    </script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.4.0/dist/lazyload.min.js"></script>
+    <script>
+    
+    var lazyLoadInstance = new LazyLoad({
+    elements_selector: ".lazy"
+    // ... more custom settings?
+});
+
     </script>
 
 </body>

@@ -47,8 +47,6 @@ document.querySelector('#sortTrees').onclick = () => {
 }
 
 
-
-
 //Add Redwood to end of list
 document.querySelector('#add_redwood').onclick = () => {
     trees.push('Redwood')

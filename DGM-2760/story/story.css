@@ -22,6 +22,10 @@ header img {
     display: block;
 }
 
+.content {
+    display: flex;
+}
+
 
 footer {
     text-align: center;

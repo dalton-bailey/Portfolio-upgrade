@@ -156,22 +156,8 @@ main p {
   margin: 1rem 0 0 2%; }
 main p.story {
   column-count: 1; }
-main figure.photo {
-  width: 46%;
-  margin: 1rem 0 0 2%;
+main .founder {
   float: right; }
-main figure.photo img {
-  width: 100%;
-  margin: 1rem 0 0 2%;
-  float: right; }
-main figure.photo figcaption {
-  text-align: center;
-  color: #F28F79; }
-main article.founder {
-  margin-bottom: 1rem; }
-main div.blog article {
-  margin: 0.5rem 2%;
-  width: 96%; }
 
 footer {
   width: 100%;
@@ -188,12 +174,6 @@ footer {
   clear: both; }
 
 @media only screen and (min-width: 560px) {
-  main figure.photo {
-    width: 46%;
-    margin: 0.5rem 2%; }
-  main figure.photo img {
-    margin: 1rem 0 0 2%;
-    float: right; }
   main div.blog article {
     float: left;
     width: 46%; }
@@ -213,16 +193,6 @@ footer {
   nav ul li a {
     padding: .5rem 1rem; }
 
-  main figure.photo {
-    width: 46%;
-    margin: 0.5rem 2%; }
-  main figure.photo img {
-    width: 100%;
-    margin: 1rem 0 0 2%;
-    float: right; }
-  main div.blog article {
-    float: left;
-    width: 29.33%; }
   main p.story {
     column-count: 4; } }
 @media only screen and (min-width: 300px) {

@@ -99,29 +99,8 @@ main {
         column-count: 1;
     }
 
-    figure.photo {
-        width: 50%-$gutterdbl;
-        margin: 1rem 0 0 $gutter;
+    .founder {
         float: right;
-    }
-    figure.photo img {
-        width: 100%;
-        margin: 1rem 0 0 $gutter;
-        float: right;
-    }
-
-    figure.photo figcaption {
-        text-align: center;
-        color: $secondaryColor;
-    }
-
-    article.founder {
-        margin-bottom: 1rem;
-    }
-
-    div.blog article {
-        margin: .5rem $gutter;
-        width: 100%-$gutterdbl;
     }
 
 }
