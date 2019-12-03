@@ -16,28 +16,17 @@ const listTrees = () => {
 
 listTrees()
 
-const lowerTrees = trees.map(function(tree) {
-    return tree.toLowerCase()
-})
-
-//Make lowercase
 document.querySelector('#lowerCase').onclick = () => {
-    
-    const newListTrees = () => {
-        let newTreeList = ''
-        lowerTrees.forEach(tree => {
-            newTreeList += `${tree} <br>`
-        })
-        displayResults.innerHTML = `${newTreeList} <span>${trees.length} elments long</span>`
-    }
-    
-    newListTrees()
+    if (trees.length > 0) {
+        var lowerTrees = []
+        for (var i = 0; i < trees.length; i++) {
+            lowerTrees.push(trees[i].toLowerCase())
+            trees.splice(i, 1, lowerTrees[i])
+        }
 
-    //Sort array a to z
-document.querySelector('#sortTrees').onclick = () => {
-    lowerTrees.sort()
-    newListTrees()
-}
+        lowerTrees.sort()
+        listTrees()
+    }
 }
 
 //Sort array a to z
