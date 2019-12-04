@@ -21,12 +21,6 @@ header img {
     display: block;
 }
 
-
-footer {
-    text-align: center;
-    background-color: lightsteelblue;
-}
-
 button {
     background-color: rgb(250, 246, 120);
     border: none;
@@ -39,6 +33,14 @@ button {
     cursor: pointer;
     border-radius: 25px;
 }
+
+
+footer {
+    text-align: center;
+    background-color: lightsteelblue;
+}
+
+
 
 footer p {
     padding: .5rem;
