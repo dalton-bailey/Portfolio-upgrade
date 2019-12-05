@@ -151,8 +151,6 @@ nav {
 
 main article {
   margin: 0.5rem 2%; }
-main article.gallery figure img {
-  width: 100%; }
 main h1 {
   font-size: 2rem;
   margin: 1rem 0 0 2%;
@@ -171,6 +169,10 @@ main figure.photo img {
 main .members {
   column-count: 1;
   margin: 1rem 0 0 2%; }
+main .performance {
+  margin-bottom: 1rem; }
+main .concertPic {
+  width: 100%; }
 
 footer {
   width: 100%;
