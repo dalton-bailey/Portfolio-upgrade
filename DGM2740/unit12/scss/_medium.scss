@@ -1,0 +1,64 @@
+//Overall styling for the NAVIGATION of the document.
+nav {
+    position: relative;
+
+    button {
+        display: none;
+    }
+
+    ul.closed {
+        display: block;
+    }
+
+    ul {
+        margin-left: $gutter;
+        }
+
+    ul li {
+       float: left;
+    }
+
+
+    ul li a {
+        border: none;
+        padding: .5rem 1rem;
+    }
+
+    ul li a:hover {
+            color: $secondaryColor;
+            background-color: $primaryColor;
+        }
+
+    
+}
+
+//Overall styling for the MAIN of the document.
+main {
+    div.lead {
+        grid-row: 1;
+        grid-column: 1 / span 3;
+    }
+
+    // div.secondTop {
+    //     grid-row: 2;
+    //     grid-column: 1 / span 1;
+    // }
+
+    // div.thirdTop {
+    //     grid-row: 2;
+    //     grid-column: 2 / span 1
+    // }
+
+    // div.fourth {
+    //     grid-row: 3;
+    //     grid-column: 3 / span 1
+    // }
+    
+}
+
+footer {
+    .footer {
+        column-count: 2;
+    }
+
+}
