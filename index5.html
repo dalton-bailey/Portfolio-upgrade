@@ -14,7 +14,7 @@
         <!-- PAGE HEADER GOES HERE -->
         <header>
             <figure class="logo">
-                <img src="/DGM2740/unit5/images/restaurant logo 1x-01.png" alt="logo">
+                <img src="/DGM2740/unit5/images/restaurant logo 1x.png" alt="logo">
             </figure>
             <div>
                 <h1>Restaurant</h1>
@@ -35,8 +35,16 @@
 
         <!-- PAGE CONTENT GOES HERE -->
         <main class="clearfix">
-            <div class="banner">
-            </div>
+                <figure class="banner">
+                        <img src="DGM2740/unit5/images/restaurant_restaurant-450.jpg" 
+                             alt="restaurant" 
+                             sizes="100vw" 
+                             srcset="DGM2740/unit5/images/restaurant_restaurant-450.jpg 450w, 
+                                     DGM2740/unit5/images/restaurant_restaurant-600.jpg 600w,
+                                     DGM2740/unit5/images/restaurant_restaurant-750.jpg 750w, 
+                                     DGM2740/unit5/images/restaurant_restaurant-900.jpg 900w, 
+                                     DGM2740/unit5/images/restaurant_restaurant-1050.jpg 1050w">
+                </figure>
             <div>
                 <article>
                     <h2>Our Story</h2>
@@ -68,9 +76,14 @@
             <div>
                 <article>
                     <h2>Our Founder</h2>
-                    <img class="founder" srcset="DGM2740/unit5/images/owner_300.jpg 301w, DGM2740/unit5/images/owner_450.jpg 451w, DGM2740/unit5/images/owner_600.jpg 601w"
-                        sizes="(max-width: 560px) 300px,
-            (max-width: 1140px) 450px, 600px" src="DGM2740/unit5/images/owner_450.jpg">
+                    <picture class="founder">
+                        <source srcset="DGM2740/unit5/images/owner_600.jpg"
+                                media="(min-width: 55em)">
+                        <source srcset="DGM2740/Unit5/images/owner_450.jpg"
+                                media="(min-width: 35em)">
+                        <source srcset="DGM2740/unit5/images/owner_300.jpg">
+                        <img src="DGM2740/unit5/images/owner_300.jpg" alt="founder">
+                    </picture>
                     <p>Elementum, sagittis adipiscing, nec et? Ridiculus, porta placerat ultrices odio diam in, urna
                         phasellus in ac egestas egestas nunc, pellentesque, non porta, nisi turpis. Ultricies
                         integer
