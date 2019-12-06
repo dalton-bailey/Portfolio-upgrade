@@ -1,0 +1,50 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
+    max-width: 75rem;
+}
+
+.header {
+    position: relative;
+}
+
+.top {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: 3rem;
+}
+
+header img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+button {
+    background-color: rgb(250, 246, 120);
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+
+footer {
+    text-align: center;
+    background-color: lightsteelblue;
+}
+
+
+
+footer p {
+    padding: .5rem;
+}
+
+
+
