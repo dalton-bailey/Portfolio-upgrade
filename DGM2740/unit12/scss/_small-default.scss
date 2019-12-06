@@ -102,32 +102,13 @@ main {
 //Overall styling for the FOOTER of the document.
 footer {
     width: 100%;
-    background-color: $primaryColor;
-
-    .footer {
-        column-count: 1;
-        text-align: center;
-        padding: 20px 30px 60px 30px;
-    }
-    
-    .footer div {
-        padding: 10px;
-        font-size: 1.5rem;
-    }
+    background-color: $menuColor;
 
     .copyright {
         text-align: center;
         color: white;
         padding: .75rem;
         font-size: .9rem;
-    }
-
-    .top {
-        font-weight: bold;
-    }
-
-    .section p {
-        padding: 3px
     }
 }
 
