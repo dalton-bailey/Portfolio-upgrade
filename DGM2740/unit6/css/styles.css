@@ -172,7 +172,8 @@ main .members {
 main .performance {
   margin-bottom: 1rem; }
 main .concertPic {
-  width: 100%; }
+  width: 100%;
+  height: auto; }
 
 footer {
   width: 100%;
