@@ -1,0 +1,28 @@
+{
+    "hotels": [
+        {
+            "name": "Marriott",
+            "rooms": "50",
+            "gym": "Yes",
+            "roomTypes": ["King", " Queen", " Double"],
+            "address": "258 Broad Street",
+            "picture": "DGM-2760/hotel/images/room1.jpg"
+        },
+        {    
+            "name": "Sheraton",
+            "rooms": "25",
+            "gym": "No",
+            "roomTypes": ["King", " Queen"],
+            "address": "39 Eagle Street",
+            "picture": "DGM-2760/hotel/images/room2.jpg"
+        },
+        {
+            "name": "Hilton",
+            "rooms": "100",
+            "gym": "Yes",
+            "roomTypes": ["Queen", " Double"],
+            "address": "258 Desperado Street",
+            "picture": "DGM-2760/hotel/images/room3.jpg"
+        }
+    ]
+}

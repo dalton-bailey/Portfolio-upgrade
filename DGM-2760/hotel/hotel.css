@@ -1,0 +1,59 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
+    max-width: 75rem;
+}
+
+header img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.hotels {
+    list-style-type: none;
+    display: flex;
+    padding-inline-start: 5px;
+}
+
+#marriott, #sheraton, #hilton {
+    background-color: rgb(250, 246, 120);
+    color: black;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+p {
+    background-color: pink;
+    color: black;
+    padding: 15px 32px;
+    margin: 4px 2px;
+    border-radius: 25px;
+    width: 300px;
+}
+
+#picture {
+    width: 50%;
+}
+
+footer {
+    text-align: center;
+    background-color: lightsteelblue;
+}
+
+
+
+#footer {
+    background-color: lightsteelblue;
+    text-align: center;
+    padding: .5rem;
+}
+
+
+
